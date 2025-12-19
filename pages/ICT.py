@@ -25,7 +25,8 @@ with t1:
 with t2:
     for ch, ur in data.items():
         with st.expander(ch):
-            st.markdown(f"(Link veiw)[{ur[1]}]")
+            st.markdown(f"(Link veiw)[{ur[1]}]", unsafe_allow_html=True)
             st.markdown(pdf_view(ur[1]), unsafe_allow_html=True)
+
 
 
