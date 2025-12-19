@@ -17,4 +17,5 @@ for chap, url in data.items():
         with col1:
             st.video(url)
         with col2:
-            st.write(chap)
+
+            st.subheader(chap)
