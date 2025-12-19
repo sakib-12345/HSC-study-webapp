@@ -5,7 +5,7 @@ def pdf_view(pdf_url):
         .pdf-wrapper {{
             position: relative;
             width: 100%;
-            height: 700px;
+            height: 500px;
             background: black;
         }}
 
@@ -48,4 +48,5 @@ def pdf_view(pdf_url):
             }}
         }}
     </script>
+
     """
