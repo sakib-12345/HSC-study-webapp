@@ -1,7 +1,7 @@
 import streamlit as st
 from helper import pdf_view
 
-st.title("ICT Page")
+st.title("ICT Review")
 
 data = {
     "Chapter-01":["https://youtu.be/FycgM1KkpN0?si=ZVJ4P-COyTeJ3DqW", "https://drive.google.com/file/d/1gSU2AdRz6hXbdolO2nNx6O5EseIskkYc/preview"],
@@ -27,6 +27,7 @@ with t2:
         with st.expander(ch):
             st.markdown(f"[⛶ Full veiw]({ur[1]})", unsafe_allow_html=True)
             st.markdown(pdf_view(ur[1]), unsafe_allow_html=True)
+
 
 
 
