@@ -4,3 +4,6 @@ st.write("Home Page")
 
 st.write("study material will be updated soon...")
 
+with st.expander("ICT"):
+    st.markdown("[ICT PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/ICT#ict-page)")
+    st.markdown("[CHAPTER-01](https://hsc-study-webapp-by-sakib.streamlit.app/ICT#chapter-01)")
