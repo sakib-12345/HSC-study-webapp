@@ -93,12 +93,12 @@ def ani_head():
     transform: translateY(-400%);
   }
 }
-
 </style>
+
 <!-- From Uiverse.io by kennyotsu --> 
 <div class="card">
   <div class="loader">
-    <p>Let's Master in </p>
+    <p>Let's Master</p>
     <div class="words">
       <span class="word">Bangla</span>
       <span class="word">English</span>
@@ -110,7 +110,6 @@ def ani_head():
     </div>
   </div>
 </div>
-
     """
 
 
@@ -165,6 +164,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
