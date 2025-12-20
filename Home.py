@@ -10,8 +10,9 @@ with st.expander("Quick View"):
     st.markdown("[MATH PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/MATH#math-review)")
 
 m = "The video and pdf in this app are pulled from youtube and google drive.<br> They are free content and available in their owner's youtube channel and drive."
-st.markdown(side_note(About this app , m), unsafe_allow_html=True)
+st.markdown(side_note("About this app" , m), unsafe_allow_html=True)
 st.markdown(social_links(), unsafe_allow_html=True)
+
 
 
 
