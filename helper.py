@@ -67,7 +67,7 @@ def ani_head():
 
 <div class="card">
   <div class="loader">
-    <p>Let's Master</p>
+    <p>Learn </p>
     <div class="words">
       <span class="word">Bangla</span>
       <span class="word">English</span>
@@ -134,6 +134,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
