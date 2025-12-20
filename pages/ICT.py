@@ -1,6 +1,23 @@
 import streamlit as st
 from helper import pdf_view
 
+st.set_page_config(
+    page_title="Hsc Study",
+    page_icon="📈",
+    layout="wide"
+)
+ 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            
+            </style>
+            """
+    
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 st.title("ICT Review")
 
 data = {
@@ -27,6 +44,7 @@ with t2:
         with st.expander(ch):
             st.markdown(f"[⛶ Full veiw]({ur[1]})", unsafe_allow_html=True)
             st.markdown(pdf_view(ur[1]), unsafe_allow_html=True)
+
 
 
 
