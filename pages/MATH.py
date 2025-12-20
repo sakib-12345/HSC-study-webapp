@@ -36,7 +36,7 @@ with t1:
     with t3:
         for chap1, url1 in m1.items():
             with st.container(border=True):
-                col1, col2 = st.columns([1, 1])
+                col1, col2 = st.columns([1, 2])
                 with col1:
                     st.video(url1[0])
                 with col2:
@@ -44,7 +44,7 @@ with t1:
     with t4:
         for chap2, url2 in m2.items():
             with st.container(border=True):
-                col1, col2 = st.columns([1, 1])
+                col1, col2 = st.columns([1, 2])
                 with col1:
                     st.video(url2[0])
                 with col2:
@@ -60,4 +60,5 @@ with t2:
         for ch2, ur2 in m2.items():
             with st.expander(ch2):
                 st.markdown(f"[⛶ Full veiw]({ur2[1]})", unsafe_allow_html=True)
+
                 st.markdown(pdf_view(ur2[1]), unsafe_allow_html=True)
