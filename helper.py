@@ -12,7 +12,7 @@ def social_links():
         .social-icons a {
             text-decoration: none !important;
             margin: 0 10px;
-            font-size: 40px;
+            font-size: 30px;
             display: inline-block;
             color: inherit !important; /* force child i to use its color */
         }
@@ -225,6 +225,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
