@@ -7,7 +7,8 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
- hide_st_style = """
+ 
+hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
@@ -35,6 +36,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
