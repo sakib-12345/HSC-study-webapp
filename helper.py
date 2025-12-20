@@ -1,6 +1,5 @@
 
 
-
 def social_links():
     return """
     <style>
@@ -13,7 +12,7 @@ def social_links():
         .social-icons a {
             text-decoration: none !important;
             margin: 0 10px;
-            font-size: 20px;
+            font-size: 40px;
             display: inline-block;
             color: inherit !important; /* force child i to use its color */
         }
@@ -29,7 +28,7 @@ def social_links():
         /* Contact us heading */
         .contact-heading {
             text-align: center;
-            font-size: 22px;
+            font-size: 27px;
             font-weight: bold;
             margin-bottom: 15px;
             color: #c084fc;
@@ -88,7 +87,8 @@ def side_note():
         <div class="about-title-dark">About this app</div>
 
         <div class="about-box-dark">
-            The video and pdf in this app are pulled from youtube and google drive.<br> They are free content and available in their owner's youtube channel and drive.
+            The video and pdf in this app are pulled from youtube and google drive.<br> <br>
+            They are free content and available in their owner's youtube channel and drive.
         </div>
 
         """
@@ -225,6 +225,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
