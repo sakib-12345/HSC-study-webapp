@@ -63,8 +63,8 @@ def social_links():
     """
 
 
-def side_note(title, msg):
-    return f"""
+def side_note():
+    return """
         <style>
         .about-title-dark {
             font-size: 20px;
@@ -85,10 +85,10 @@ def side_note(title, msg):
         }
         </style>
         
-        <div class="about-title-dark">{title}</div>
+        <div class="about-title-dark">About this app</div>
 
         <div class="about-box-dark">
-            {msg}
+            The video and pdf in this app are pulled from youtube and google drive.<br> They are free content and available in their owner's youtube channel and drive.
         </div>
 
         """
@@ -225,6 +225,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
