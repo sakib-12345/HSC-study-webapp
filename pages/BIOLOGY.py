@@ -1,5 +1,6 @@
 import streamlit as st
-from data import botany, zoology, check_auth
+from helper import check_auth
+from data import botany, zoology
 
 
 st.set_page_config(
