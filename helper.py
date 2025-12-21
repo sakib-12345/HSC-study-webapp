@@ -27,7 +27,7 @@ def check_auth():
             st.rerun()
         else:
             st.error("Invalid invite code.")
-    st.markdown("""<a class='email' href='mailto:sakibhossaintahmid@gmail.com'>
+    st.markdown("""<a class='email' href='mailto:sakibhossaintahmid@gmail.com'>sakibhossaintahmid@gmail.com
             <i class='fas fa-envelope'></i> 
         </a><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">""", unsafe_allow_html=True)
 
@@ -262,6 +262,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
