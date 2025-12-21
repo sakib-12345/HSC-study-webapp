@@ -31,7 +31,7 @@ with st.expander("Quick View"):
 
 st.subheader("Search here", divider="rainbow")
 sub = st.selectbox("📘 Select subject", subjects.keys())
-st.markdown('### <div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
+st.markdown('<div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 c1, c2 = st.columns([1, 1])
 with c1:
     paper = st.selectbox("📄 Select paper", subjects[sub].keys())
@@ -44,7 +44,7 @@ if st.button("Search"):
     else:
         items = [(chapter, subjects[sub][paper][chapter])]
 
-    with st.container(height=400):
+    with st.container(height=500):
         st.markdown(f"#### 📚 {sub} - {paper} - {chapter}")
         for chap, links in items:
             with st.container(border=True):
@@ -57,7 +57,7 @@ if st.button("Search"):
                     st.markdown(f"### {chap}")
                     st.markdown(f"[Open PDF]({links[1]})")
 else:
-    with st.container(height=400):
+    with st.container(height=500):
         st.markdown('<div style="text-align: center; color: grey;">No search result</div>',unsafe_allow_html=True)
 
 
@@ -70,6 +70,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
