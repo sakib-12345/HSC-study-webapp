@@ -1,3 +1,28 @@
+import streamlit as st
+
+def check_auth():
+    # 1. Skip if login is disabled in secrets.toml
+    if not st.secrets.get("LOGIN_ENABLED", False):
+        return True
+
+    # 2. Return True if already authenticated in this session
+    if st.session_state.get("authenticated", False):
+        return True
+
+    # 3. Otherwise, show the invite code form
+    st.title("🔒 Private Access")
+    with st.form("login_form"):
+        user_code = st.text_input("Enter Invite Code", type="password")
+        if st.form_submit_button("Access App"):
+            if user_code == st.secrets.get("INVITE_CODE"):
+                st.session_state["authenticated"] = True
+                st.rerun()
+            else:
+                st.error("Invalid invite code.")
+    
+    # 4. Stop execution of the rest of the page if not authenticated
+    st.stop()
+
 
 
 def social_links():
@@ -225,15 +250,5 @@ def pdf_view(pdf_url):
     </script>
 
     """
-
-
-
-
-
-
-
-
-
-
 
 
