@@ -33,7 +33,7 @@ st.markdown('<div style="color: grey;">Only Math and ICT for now. Others coming 
 
 
 st.markdown('### <div style="color:  #c084fc;">Search Here</div>',unsafe_allow_html=True)
-
+st.subheader("Search here", divider="rainbow")
 sub = st.selectbox("📘 Select subject", subjects.keys())
 
 c1, c2 = st.columns([1, 1])
@@ -74,6 +74,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
