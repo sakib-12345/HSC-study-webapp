@@ -19,7 +19,7 @@ def check_auth():
             </style>
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
-    st.title("🔒 Private Access")
+    st.title("Private Access")
     user_code = st.text_input("Enter Invite Code", type="password")
     if st.button("Access App"):
         if user_code == st.secrets.get("INVITE_CODE"):
@@ -29,7 +29,7 @@ def check_auth():
             st.error("Invalid invite code.")
     st.markdown("For code contact us:")
     st.markdown("""```bash
-    sakibhossaintahmid@gmail.com
+✉sakibhossaintahmid@gmail.com
     """, unsafe_allow_html=True)
 
 
@@ -264,6 +264,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
