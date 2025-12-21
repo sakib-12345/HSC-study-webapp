@@ -31,7 +31,7 @@ with st.expander("Quick View"):
 
 st.subheader("Search here", divider="rainbow")
 sub = st.selectbox("📘 Select subject", subjects.keys())
-st.markdown('<div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
+st.markdown('<div style="color: grey;">Only Math, Botany, Zoology and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 c1, c2 = st.columns([1, 1])
 with c1:
     paper = st.selectbox("📄 Select paper", subjects[sub].keys())
@@ -70,6 +70,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
