@@ -20,14 +20,18 @@ def check_auth():
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
     st.title("🔒 Private Access")
-    with st.form("login_form"):
-        user_code = st.text_input("Enter Invite Code", type="password")
-        if st.form_submit_button("Access App"):
-            if user_code == st.secrets.get("INVITE_CODE"):
-                st.session_state["authenticated"] = True
-                st.rerun()
-            else:
-                st.error("Invalid invite code.")
+    user_code = st.text_input("Enter Invite Code", type="password")
+    if st.form_submit_button("Access App"):
+        if user_code == st.secrets.get("INVITE_CODE"):
+            st.session_state["authenticated"] = True
+            st.rerun()
+        else:
+            st.error("Invalid invite code.")
+            st.link_button(
+            label="📧 Contact Support to Get Invite Code",
+            url="mailto:your-email@example.com?subject=Invite%20Code%20Request&body=Hello,%20I%20would%20like%20to%20request%20access."
+             )
+
     
     # 4. Stop execution of the rest of the page if not authenticated
     st.stop()
@@ -259,6 +263,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
