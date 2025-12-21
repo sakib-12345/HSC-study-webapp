@@ -28,10 +28,10 @@ def check_auth():
         else:
             st.error("Invalid invite code.")
     st.markdown("For code contact us:")
-    st.markdown("""```
+    st.markdown("""```bash
     sakibhossaintahmid@gmail.com
     """, unsafe_allow_html=True)
-    st.markdown()
+
 
     
     # 4. Stop execution of the rest of the page if not authenticated
@@ -264,6 +264,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
