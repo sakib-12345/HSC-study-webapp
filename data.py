@@ -34,6 +34,43 @@ math2 = {
 }
 
 
+botany = {
+    "Chapter-01":["https://youtu.be/bmrZbBM9uN8?si=vKvC9ipXREiALypi", ""],
+    "Chapter-02":["https://youtu.be/yLSjcbOt8qI?si=1S21zsubisxoNKvh", ""],
+    "Chapter-03":["https://youtu.be/8Awt9erCIog?si=iyQXQ-7Un_HVvGtI", ""],
+    "Chapter-04":["https://youtu.be/r-Yf80ieVU4?si=4GWkcfA74mP1fgw-", ""],
+    "Chapter-05":["https://youtu.be/KOzIJv-BKXE?si=A_YFlIweI8fbgP6r", ""],
+    "Chapter-06":["https://youtu.be/idhlmVAHnM8?si=CbtVpYy6xdGtoUGa", ""],
+    "Chapter-07":["https://youtu.be/e4mX4IFfVxg?si=UTYngRoCHXTT_AXY", ""],
+    "Chapter-08":["https://youtu.be/sYlWwN2eXls?si=Zdn341PFF24bGXxp", ""],
+    "Chapter-09":["https://youtu.be/spKE10OOvUc?si=TZZVoioWb0R6FZcf", ""],
+    "Chapter-10":["https://youtu.be/ScY_GDOBj5o?si=RKStfcF34naUqA-L", ""],
+    "Chapter-11":["https://youtu.be/VaOREawhUUw?si=LDtDU6RTW8ciThc8", ""],
+    "Chapter-12":["https://youtu.be/0IWLMx41nGc?si=NvwRkaI8E9fsgRPb", ""]
+}
+
+
+
+
+zoology = {
+    "Chapter-01":["https://youtu.be/0SkGoXEpre0?si=FGmQgOHyGp6jGjB2", ""],
+    "Chapter-2.1":["https://youtu.be/XxjORjncrkw?si=bFMxg_IcYXRGXmLl", ""],
+    "Chapter-2.2":["https://youtu.be/taph1QomInA?si=IFr9r6SGc8YBq5pF", ""],
+    "Chapter-2.3":["https://youtu.be/EcyIqoQR2Z0?si=zInmunlEQeNKv-UL", ""],
+    "Chapter-03":["https://youtu.be/y0hwsm9O9ys?si=KMuLU7ynBwbqEz0z", ""],
+    "Chapter-04":["https://youtu.be/dGpr8_KuwBE?si=7jJEXZQ8ARDeXjb6", ""],
+    "Chapter-05":["https://youtu.be/GOxsttnl0SQ?si=5X9-uITlkKYX-N3s", ""],
+    "Chapter-06":["https://youtu.be/sBDZFD4xa4M?si=TEcxdYzf3aq8SCZs", ""],
+    "Chapter-07":["https://youtu.be/_zfJJvVkigw?si=i8oqyWlwn8t25ywD", ""],
+    "Chapter-08":["https://youtu.be/8IpYTfSNQ8I?si=atfkzrINnNLKzMhM", ""],
+    "Chapter-09":["https://youtu.be/-WUiZ-Dd-2A?si=TMz0Yik6xfkW1YKo", ""],
+    "Chapter-10":["https://youtu.be/7pcpJfw9pmI?si=S5H68oFo-bsCSeXc", ""],
+    "Chapter-11":["https://youtu.be/FHjnDkaNqGI?si=PaVqmAaTIc7QQciL", ""],
+    "Chapter-12":["https://youtu.be/1BcMj_K6hfc?si=B3gwi7kozzv0YS7Z", ""]
+}
+
+
+
 subjects = {
     "Math": {
         "1st Paper": math1,
@@ -55,12 +92,10 @@ subjects = {
                                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
     },
     "Botany": {
-        "Main": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                                             "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
+        "Main": botany
     },
     "Zoology": {
-        "Main": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                                             "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
+        "Main": zoology
     },
     "Bangla": {
         "1st Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -76,3 +111,4 @@ subjects = {
     }
 
 }
+
