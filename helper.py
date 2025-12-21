@@ -27,9 +27,11 @@ def check_auth():
             st.rerun()
         else:
             st.error("Invalid invite code.")
-    st.markdown("""<a class='email' href='mailto:sakibhossaintahmid@gmail.com'>
-            <i class='fas fa-envelope'></i>sakibhossaintahmid@gmail.com 
-        </a><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">""", unsafe_allow_html=True)
+    st.markdown("For code contact us:")
+    st.markdown("""```
+    sakibhossaintahmid@gmail.com
+    """, unsafe_allow_html=True)
+    st.markdown()
 
     
     # 4. Stop execution of the rest of the page if not authenticated
@@ -262,6 +264,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
