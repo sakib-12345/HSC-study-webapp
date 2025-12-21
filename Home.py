@@ -1,6 +1,7 @@
 import streamlit as st
 from data import subjects
-from helper import ani_head, side_note, social_links
+from helper import ani_head, side_note, social_links, check_auth
+
 
 
 st.set_page_config(
@@ -72,6 +73,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
