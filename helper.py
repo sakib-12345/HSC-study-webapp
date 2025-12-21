@@ -21,7 +21,7 @@ def check_auth():
     st.markdown(hide_st_style, unsafe_allow_html=True)
     st.title("🔒 Private Access")
     user_code = st.text_input("Enter Invite Code", type="password")
-    if st.form_submit_button("Access App"):
+    if st.button("Access App"):
         if user_code == st.secrets.get("INVITE_CODE"):
             st.session_state["authenticated"] = True
             st.rerun()
@@ -263,6 +263,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
