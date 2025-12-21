@@ -19,7 +19,7 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
-st.header("Biology Review Review")
+st.header("Biology Review")
 
 t3, t4 = st.tabs(["Botany", "Zoology"])
 with t3:
