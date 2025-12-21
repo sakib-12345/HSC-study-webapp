@@ -1,5 +1,5 @@
 import streamlit as st
-from data import botany, zoology
+from data import botany, zoology, check_auth
 
 
 st.set_page_config(
@@ -7,7 +7,8 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
- 
+
+check_auth()
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
