@@ -30,7 +30,8 @@ with t3:
                 st.video(url1[0])
             with col2:
                 st.subheader(chap1)
- with t4:
+ 
+with t4:
     for chap2, url2 in zoology.items():
          with st.container(border=True):
             col1, col2 = st.columns([1, 2])
