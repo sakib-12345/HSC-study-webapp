@@ -10,6 +10,15 @@ def check_auth():
         return True
 
     # 3. Otherwise, show the invite code form
+    
+    hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+    st.markdown(hide_st_style, unsafe_allow_html=True)
     st.title("🔒 Private Access")
     with st.form("login_form"):
         user_code = st.text_input("Enter Invite Code", type="password")
@@ -250,5 +259,6 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
