@@ -27,8 +27,8 @@ def check_auth():
             st.rerun()
         else:
             st.error("Invalid invite code.")
-            st.link_button(
-    label="📧 Contact Support to Get Invite Code",
+    st.link_button(
+        label="📧 Contact Support to Get Invite Code",
             url="mailto:sakibhossaintahmid@gmail.com?subject=Invite%20Code%20Request&body=Hello,%20I%20would%20like%20to%20request%20access."
              )
 
@@ -263,6 +263,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
