@@ -24,7 +24,7 @@ st.header("Math Review")
 t1, t2 = st.tabs(["OneShot", "Pdf"])
 
 with t1:
-    option1 = st.selectbox("",["1st Paper", "2nd Paper"])
+    option1 = st.checkbox("",["1st Paper", "2nd Paper"])
     if option1 == "1st Paper":
         for chap1, url1 in math1.items():
             with st.container(border=True):
@@ -54,6 +54,7 @@ with t2:
                 st.markdown(f"[⛶ Full veiw]({ur2[1]})", unsafe_allow_html=True)
 
                 st.markdown(pdf_view(ur2[1]), unsafe_allow_html=True)
+
 
 
 
