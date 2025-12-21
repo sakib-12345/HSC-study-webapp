@@ -24,8 +24,8 @@ st.header("Math Review")
 t1, t2 = st.tabs(["OneShot", "Pdf"])
 
 with t1:
-    t3, t4 = st.tabs(["1st Paper", "2nd Paper"])
-    with t3:
+    option1 = st.radio("",["1st Paper", "2nd Paper"])
+    if option == "1st Paper":
         for chap1, url1 in math1.items():
             with st.container(border=True):
                 col1, col2 = st.columns([1, 2])
@@ -33,7 +33,7 @@ with t1:
                     st.video(url1[0])
                 with col2:
                     st.subheader(chap1)
-    with t4:
+    else:
         for chap2, url2 in math2.items():
             with st.container(border=True):
                 col1, col2 = st.columns([1, 2])
@@ -54,5 +54,6 @@ with t2:
                 st.markdown(f"[⛶ Full veiw]({ur2[1]})", unsafe_allow_html=True)
 
                 st.markdown(pdf_view(ur2[1]), unsafe_allow_html=True)
+
 
 
