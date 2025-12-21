@@ -31,9 +31,10 @@ with st.expander("Quick View"):
 
 st.markdown('<div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 
-sub = st.selectbox("📘 Select subject", subjects.keys())
+
 st.markdown('### <div style="color: purple;">Search</div>',unsafe_allow_html=True)
 
+sub = st.selectbox("📘 Select subject", subjects.keys())
 
 c1, c2 = st.columns([1, 1])
 with c1:
@@ -73,6 +74,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
