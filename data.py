@@ -55,15 +55,11 @@ subjects = {
                                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
     },
     "Botany": {
-        "1st Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                                             "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]},
-        "2nd Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Main": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
     },
     "Zoology": {
-        "1st Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-                                             "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]},
-        "2nd Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "Main": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
     },
     "Bangla": {
@@ -78,4 +74,5 @@ subjects = {
         "2nd Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
                                              "https://www.youtube.com/watch?v=dQw4w9WgXcQ"]}
     }
+
 }
