@@ -8,7 +8,9 @@ st.set_page_config(
     page_icon="📈",
     layout="wide"
 )
- 
+
+check_auth()
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -70,6 +72,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
