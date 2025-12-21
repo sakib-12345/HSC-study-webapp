@@ -25,7 +25,7 @@ t1, t2 = st.tabs(["OneShot", "Pdf"])
 
 with t1:
     option1 = st.radio("",["1st Paper", "2nd Paper"])
-    if option == "1st Paper":
+    if option1 == "1st Paper":
         for chap1, url1 in math1.items():
             with st.container(border=True):
                 col1, col2 = st.columns([1, 2])
@@ -54,6 +54,7 @@ with t2:
                 st.markdown(f"[⛶ Full veiw]({ur2[1]})", unsafe_allow_html=True)
 
                 st.markdown(pdf_view(ur2[1]), unsafe_allow_html=True)
+
 
 
 
