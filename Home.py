@@ -29,13 +29,9 @@ with st.expander("Quick View"):
     st.markdown("[ICT PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/ICT#ict-review)")
     st.markdown("[MATH PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/MATH#math-review)")
 
-st.markdown('<div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
-
-
-st.markdown('### <div style="color:  #c084fc;">Search Here</div>',unsafe_allow_html=True)
 st.subheader("Search here", divider="rainbow")
 sub = st.selectbox("📘 Select subject", subjects.keys())
-
+st.markdown('### <div style="color: grey;">Only Math and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 c1, c2 = st.columns([1, 1])
 with c1:
     paper = st.selectbox("📄 Select paper", subjects[sub].keys())
@@ -49,7 +45,7 @@ if st.button("Search"):
         items = [(chapter, subjects[sub][paper][chapter])]
 
     with st.container(height=400):
-        st.markdown(f"## 📚 {sub} - {paper} - {chapter}")
+        st.markdown(f"#### 📚 {sub} - {paper} - {chapter}")
         for chap, links in items:
             with st.container(border=True):
                 col1, col2 = st.columns([2, 3])
@@ -74,6 +70,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
