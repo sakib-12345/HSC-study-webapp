@@ -26,16 +26,6 @@ st.write("> study material will be updated soon...")
 
 PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
-with st.expander("Quick View"):
-    a1, a2, a3, a4 = st.columns(4)
-    with a1:
-        st.page_link("pages/MATH.py", label=f"![icon]({PNG_URL}) MATH PAGE")
-    with a2:
-        st.page_link("pages/BIOLOGY.py", label=f"![icon]({PNG_URL}) BIOLOGY")
-    with a3:
-        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY PAGE")
-    with a4:
-        st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
 
 st.markdown(f"""
     <style>
@@ -79,6 +69,17 @@ st.markdown(f"""
         </a>
     </div>
 """, unsafe_allow_html=True)
+st.caption("Quick view")
+with st.container(border=True):
+    a1, a2, a3, a4 = st.columns(4)
+    with a1:
+        st.page_link("pages/MATH.py", label=f"![icon]({PNG_URL}) MATH PAGE")
+    with a2:
+        st.page_link("pages/BIOLOGY.py", label=f"![icon]({PNG_URL}) BIOLOGY")
+    with a3:
+        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY PAGE")
+    with a4:
+        st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
 
 
 
@@ -123,6 +124,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
