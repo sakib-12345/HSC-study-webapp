@@ -37,35 +37,43 @@ with st.expander("Quick View"):
     with a4:
         st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
 
-import streamlit as st
-
-# Custom CSS to center the button and apply your hex color
 st.markdown(f"""
     <style>
-    /* Centers the button container */
-    .stLinkButton {{
+    /* Smooth scrolling for the whole page */
+    html {{
+        scroll-behavior: smooth;
+    }}
+    
+    .button-container {{
         display: flex;
         justify-content: center;
+        padding: 20px 0;
     }}
-    /* Styles the button itself */
-    .stLinkButton > a {{
+    
+    .scroll-button {{
         background-color: #c084fc !important;
         color: white !important;
-        border: none !important;
-        padding: 0.5rem 2rem !important;
-        border-radius: 8px !important;
+        padding: 0.6rem 2.5rem;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 500;
         transition: opacity 0.3s ease;
+        border: none;
+        display: inline-block;
     }}
-    /* Subtle hover effect */
-    .stLinkButton > a:hover {{
-        opacity: 0.85 !important;
+    
+    .scroll-button:hover {{
+        opacity: 0.85;
+        color: white !important;
     }}
     </style>
+    
+    <div class="button-container">
+        <a href="#search-here" target="_self" class="scroll-button">
+            Start
+        </a>
+    </div>
 """, unsafe_allow_html=True)
-
-# The Start Button
-st.link_button("Start", "https://hsc-study-webapp-by-sakib.streamlit.app/~/+/#search-here")
-
 
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
@@ -109,6 +117,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
