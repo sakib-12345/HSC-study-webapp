@@ -53,7 +53,11 @@ st.markdown(f"""
     .scroll-button {{
         background-color: #c084fc !important;
         color: white !important;
-        padding: 0.8rem 10rem;
+         width: 80%;           /* Takes up 80% of width on mobile */
+        max-width: 400px;     /* Prevents it from getting too huge on desktop */
+        
+        padding: 12px 0px !important;
+       
         border-radius: 8px;
         font-weight: 500;
         transition: opacity 0.3s ease;
@@ -118,6 +122,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
