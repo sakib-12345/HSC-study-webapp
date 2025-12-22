@@ -60,6 +60,7 @@ st.markdown(f"""
         transition: opacity 0.3s ease;
         border: none;
         display: inline-block;
+        text-decoration: none !important; 
     }}
     
     .scroll-button:hover {{
@@ -118,6 +119,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
