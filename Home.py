@@ -3,7 +3,7 @@ from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page
 
 Page()
-import streamlit as st
+
 
 with st.sidebar:
     st.title("Connect with me")
@@ -102,6 +102,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
