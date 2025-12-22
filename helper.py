@@ -115,6 +115,39 @@ def social_links():
     """
 
 
+def side_note_2():
+    return """
+        <style>
+        .about-title-dark {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #c084fc;
+        }
+
+        .about-box-dark {
+            padding: 14px 16px;
+            background: #1e1e2e;
+            border-left: 4px solid #a855f7;
+            border-radius: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #e9d5ff;
+            box-shadow: 0 0 8px rgba(168, 85, 247, 0.15);
+        }
+        </style>
+        
+        <div class="about-title-dark">About this app</div>
+
+        <div class="about-box-dark">
+           This web app helps you study without getting distracted by unnecessary YouTube videos.<br><br>
+           You can easily access free one-shot classes and their PDFs in one place.<br>
+        </div>
+
+        """
+
+
+
 def side_note():
     return """
         <style>
@@ -279,6 +312,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
