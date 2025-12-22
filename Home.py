@@ -3,6 +3,31 @@ from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page
 
 Page()
+import streamlit as st
+
+with st.sidebar:
+    st.title("Connect with me")
+    
+    # Facebook
+    st.link_button("Facebook", "www.facebook.com", 
+                   icon=":material/facebook:", type="tertiary")
+    
+    # Instagram (using photo_camera as standard Instagram logo)
+    st.link_button("Instagram", "www.instagram.com", 
+                   icon=":material/photo_camera:", type="tertiary")
+    
+    # X (Twitter)
+    st.link_button("X (Twitter)", "x.com", 
+                   icon=":material/close:", type="tertiary")
+    
+    # GitHub
+    st.link_button("GitHub", "github.com", 
+                   icon=":material/code:", type="tertiary")
+    
+    # Email
+    st.link_button("Email Me", "mailto:sakibhossaintahmid@gmail.com", 
+                   icon=":material/mail:", type="tertiary")
+
 
 check_auth()
 
@@ -77,6 +102,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
