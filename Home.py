@@ -39,7 +39,6 @@ with st.expander("Quick View"):
 
 st.markdown(f"""
     <style>
-    /* Smooth scrolling for the whole page */
     html {{
         scroll-behavior: smooth;
     }}
@@ -47,14 +46,13 @@ st.markdown(f"""
     .button-container {{
         display: flex;
         justify-content: center;
-        padding: 20px 0;
+        padding: 30px 0;
     }}
     
     .scroll-button {{
         background-color: #c084fc !important;
         color: white !important;
         padding: 0.6rem 2.5rem;
-        text-decoration: none;
         border-radius: 8px;
         font-weight: 500;
         transition: opacity 0.3s ease;
@@ -119,6 +117,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
