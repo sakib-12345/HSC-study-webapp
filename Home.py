@@ -43,7 +43,7 @@ st.markdown(f"""
         background-color: #c084fc !important;
         color: white !important;
          width: 80%;           /* Takes up 80% of width on mobile */
-        max-width: 400px;     /* Prevents it from getting too huge on desktop */
+        max-width: 500px;     /* Prevents it from getting too huge on desktop */
         
         padding: 12px 0px !important;
         text-align: center;
@@ -123,6 +123,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
