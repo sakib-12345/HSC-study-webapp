@@ -20,7 +20,7 @@ def check_auth():
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
     st.title("📈 HSC Study WebApp")
-    st.caption("Private Access")
+    st.caption("Private Access Required!!!")
     user_code = st.text_input("Enter Invite Code", type="password")
     if st.button("Access App"):
         if user_code == st.secrets.get("INVITE_CODE"):
@@ -28,12 +28,13 @@ def check_auth():
             st.rerun()
         else:
             st.error("Invalid invite code.")
-    st.markdown("For code contact us:")
+    st.markdown("For code contact me on ✉:")
     st.markdown("""```bash
-✉sakibhossaintahmid@gmail.com
+sakibhossaintahmid@gmail.com
     """, unsafe_allow_html=True)
 
-
+    with st.expander("About this app")
+        st.write("*This web app helps you study without getting distracted by unnecessary YouTube videos. You can easily access free one-shot classes and their PDFs in one place.*")
     
     # 4. Stop execution of the rest of the page if not authenticated
     st.stop()
@@ -265,6 +266,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
