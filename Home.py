@@ -1,6 +1,6 @@
 import streamlit as st
 from data import subjects
-from helper import ani_head, side_note, social_links, check_auth, Page
+from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
 
 Page()
 
@@ -83,7 +83,11 @@ with st.container(border=True):
 
 st.write("")
 st.write("")
-st.markdown(side_note(), unsafe_allow_html=True)
+b1, b2 =  st.columns(2)
+with b1:
+    st.markdown(side_note_2(), unsafe_allow_html=True)
+with b2:
+    st.markdown(side_note(), unsafe_allow_html=True)
 
 st.write("")
 st.write("")
@@ -129,6 +133,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
