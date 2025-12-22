@@ -128,8 +128,7 @@ def side_note():
         <div class="about-title-dark">About this app</div>
 
         <div class="about-box-dark">
-            The video and pdf in this app are pulled from youtube and google drive.<br> <br>
-            They are free content and available in their owner's youtube channel and drive.
+            All videos and PDFs shown in this app come from YouTube and Google Drive.<br> This content is free and also available on the original creators’ platforms.<br> Watching videos through this app still counts as views on their YouTube channels, not ours.
         </div>
 
         """
@@ -266,6 +265,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
