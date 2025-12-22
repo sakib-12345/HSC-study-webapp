@@ -1,5 +1,15 @@
 import streamlit as st
 
+def Page():
+    
+    st.logo("webapp_icon.png", size="large")
+
+    st.set_page_config(
+    page_title="Hsc Study",
+    page_icon="webapp_icon.png",
+    layout="wide"
+    )
+
 def check_auth():
     # 1. Skip if login is disabled in secrets.toml
     if not st.secrets.get("LOGIN_ENABLED", False):
@@ -267,6 +277,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
