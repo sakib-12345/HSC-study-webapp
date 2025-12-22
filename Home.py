@@ -31,7 +31,11 @@ st.markdown(f"""
     html {{
         scroll-behavior: smooth;
     }}
-    
+    /* THE CSS FIX: Prevents browser from 'remembering' scroll position */
+    * { 
+        overflow-anchor: none !important; 
+     }
+
     .button-container {{
         display: flex;
         justify-content: center;
@@ -133,6 +137,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
