@@ -5,29 +5,29 @@ from helper import ani_head, side_note, social_links, check_auth, Page
 Page()
 
 
+# Setup sidebar
 with st.sidebar:
-    st.title("Connect with me")
+    st.caption("SOCIALS")
     
     # Facebook
-    st.link_button("Facebook", "www.facebook.com", 
-                   icon=":material/facebook:", type="tertiary")
+    st.page_link("www.facebook.com", 
+                 label="Facebook", icon=":material/facebook:")
     
-    # Instagram (using photo_camera as standard Instagram logo)
-    st.link_button("Instagram", "www.instagram.com", 
-                   icon=":material/photo_camera:", type="tertiary")
+    # Instagram
+    st.page_link("www.instagram.com", 
+                 label="Instagram", icon=":material/camera:")
     
     # X (Twitter)
-    st.link_button("X (Twitter)", "x.com", 
-                   icon=":material/close:", type="tertiary")
+    st.page_link("x.com", 
+                 label="X (Twitter)", icon=":material/close:")
     
     # GitHub
-    st.link_button("GitHub", "github.com", 
-                   icon=":material/code:", type="tertiary")
+    st.page_link("github.com", 
+                 label="GitHub", icon=":material/terminal:")
     
     # Email
-    st.link_button("Email Me", "mailto:sakibhossaintahmid@gmail.com", 
-                   icon=":material/mail:", type="tertiary")
-
+    st.page_link("mailto:sakibhossaintahmid@gmail.com", 
+                 label="Email Me", icon=":material/mail:")
 
 check_auth()
 
@@ -102,6 +102,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
