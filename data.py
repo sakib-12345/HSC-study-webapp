@@ -70,14 +70,14 @@ zoology = {
 }
 
 chem1 = {
-    "Chapter-1":["https://youtu.be/3ILNd6iFso8?si=Gtv3p9cLmQ0OFdgS", ""],
+    "Chapter-1":["https://youtu.be/3ILNd6iFso8?si=Gtv3p9cLmQ0OFdgS", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwCqrOBsE34a4TawgSpB0mmg9ThGSJQkw6dx7Y2bQCA&s"],
     "Chapter-2.1":["https://youtu.be/OPBVZWEHtGE?si=Oa6ZK-KKZzw2rZ40", "https://drive.google.com/file/d/1IOwhKFSp1pfRj8USrgm9PZcBrFLmAxm8/preview"],
     "Chapter-2.2":["https://youtu.be/RcssceVe3Ig?si=3ENxXMp8lEgPXxBu", "https://drive.google.com/file/d/1VAcsvFzT-7I_ZpnP0oqn3GbcrteDsLBE/preview"],
     "Chapter-3.1":["https://youtu.be/V0elC5WDrsg?si=x0B4OKzaMBlNrId6", "https://drive.google.com/file/d/1s_uu_0yZmoHxgbrFGdNynxgvdnyeaC2v/preview"],
-    "Chapter-3.2":["https://youtu.be/SoqlGi6dFZY?si=ZDRiFdsnHJcDgkAz", ""],
-    "Chapter-4.1":["https://youtu.be/xNMDGbeuxmk?si=6TeMWF0oyEihEL_c", ""],
-    "Chapter-4.2":["https://youtu.be/CHJYjLUc9Sc?si=g-W2qRM7SkXuWmf9", ""],
-    "Chapter-5":["https://youtu.be/JfvGXKBWRpw?si=___DchojijaxgckI", ""]
+    "Chapter-3.2":["https://youtu.be/SoqlGi6dFZY?si=ZDRiFdsnHJcDgkAz", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwCqrOBsE34a4TawgSpB0mmg9ThGSJQkw6dx7Y2bQCA&s"],
+    "Chapter-4.1":["https://youtu.be/xNMDGbeuxmk?si=6TeMWF0oyEihEL_c", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwCqrOBsE34a4TawgSpB0mmg9ThGSJQkw6dx7Y2bQCA&s"],
+    "Chapter-4.2":["https://youtu.be/CHJYjLUc9Sc?si=g-W2qRM7SkXuWmf9", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwCqrOBsE34a4TawgSpB0mmg9ThGSJQkw6dx7Y2bQCA&s"],
+    "Chapter-5":["https://youtu.be/JfvGXKBWRpw?si=___DchojijaxgckI", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbwCqrOBsE34a4TawgSpB0mmg9ThGSJQkw6dx7Y2bQCA&s"]
 }
 
 chem2 = {
@@ -130,6 +130,7 @@ subjects = {
     }
 
 }
+
 
 
 
