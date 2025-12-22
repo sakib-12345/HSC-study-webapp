@@ -19,7 +19,8 @@ def check_auth():
             </style>
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
-    st.title("Private Access")
+    st.title("📈 HSC Study WebApp")
+    st.caption("Private Access")
     user_code = st.text_input("Enter Invite Code", type="password")
     if st.button("Access App"):
         if user_code == st.secrets.get("INVITE_CODE"):
@@ -264,6 +265,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
