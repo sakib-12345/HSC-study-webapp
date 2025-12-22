@@ -3,6 +3,7 @@ from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
 from streamlit.components.v1 import html
 
+html("<script>window.parent.window.scrollTo(0,0);</script>", height=0)
 st.html('<div id="top"></div>') 
 
 
@@ -16,7 +17,9 @@ hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            
+            /* Prevents browser from jumping to widgets on load */
+            * { overflow-anchor: none !important; }
+            html { scroll-behavior: smooth; }
             </style>
             """
     
@@ -132,6 +135,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
