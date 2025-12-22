@@ -29,11 +29,15 @@ st.markdown(ani_head(), unsafe_allow_html=True)
 st.write("> study material will be updated soon...")
 
 with st.expander("Quick View"):
-    st.page_link("pages/MATH.py", label="MATH", icon="⚙️")
-    st.markdown("[ICT PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/ICT#ict-review)")
-    st.markdown("[MATH PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/MATH#math-review)")
-    st.markdown("[BIOLOGY PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/~/+/BIOLOGY#biology-review)")
-    st.markdown("[CHEMISTRY PAGE](https://hsc-study-webapp-by-sakib.streamlit.app/~/+/BIOLOGY#chemistry-review)")
+    with st.container(border=True)
+        st.page_link("pages/MATH.py", label="MATH PAGE")
+    with st.container(border=True)
+        st.page_link("pages/BIOLOGY.py", label="BIOLOGY")
+    with st.container(border=True)
+        st.page_link("pages/CHEMISTRY.py", label="CHEMISTRY PAGE")
+    with st.container(border=True)
+        st.page_link("pages/ICT.py", label="ICT PAGE")
+    
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
@@ -76,6 +80,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
