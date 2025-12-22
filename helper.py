@@ -17,7 +17,7 @@ def side():
     }
     .social-item:hover {
         opacity: 1.0;
-        color: #FF4B4B; /* Streamlit Red accent */
+        color: #c084fc; /* Streamlit Red accent */
     }
     .social-svg {
         width: 22px;
@@ -330,6 +330,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
