@@ -53,7 +53,7 @@ st.markdown(f"""
     .scroll-button {{
         background-color: #c084fc !important;
         color: white !important;
-        padding: 0.8rem 6rem;
+        padding: 0.8rem 10rem;
         border-radius: 8px;
         font-weight: 500;
         transition: opacity 0.3s ease;
@@ -118,6 +118,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
