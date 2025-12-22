@@ -85,8 +85,6 @@ b1, b2 =  st.columns(2)
 with b1:
     st.markdown(side_note_2(), unsafe_allow_html=True)
 with b2:
-    st.write("")
-    st.write("")
     st.markdown(side_note(), unsafe_allow_html=True)
 
 st.markdown(social_links(), unsafe_allow_html=True)
@@ -96,6 +94,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
