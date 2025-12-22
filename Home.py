@@ -25,13 +25,13 @@ st.write("> study material will be updated soon...")
 with st.expander("Quick View"):
     a1, a2, a3, a4 = st.columns(4)
     with a1:
-        st.page_link("pages/MATH.py", label="MATH PAGE")
+        st.page_link("pages/MATH.py", label="MATH PAGE", icon="click.png")
     with a2:
-        st.page_link("pages/BIOLOGY.py", label="BIOLOGY")
+        st.page_link("pages/BIOLOGY.py", label="BIOLOGY", icon="click.png")
     with a3:
-        st.page_link("pages/CHEMISTRY.py", label="CHEMISTRY PAGE")
+        st.page_link("pages/CHEMISTRY.py", label="CHEMISTRY PAGE", icon="click.png")
     with a4:
-        st.page_link("pages/ICT.py", label="ICT PAGE")
+        st.page_link("pages/ICT.py", label="ICT PAGE", icon="click.png")
     
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
@@ -75,6 +75,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
