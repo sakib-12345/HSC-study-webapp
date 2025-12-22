@@ -121,6 +121,7 @@ def side_note_2():
         .about-title-dark {
             font-size: 20px;
             font-weight: 700;
+            margin-top: 30px
             margin-bottom: 12px;
             color: #c084fc;
         }
@@ -313,6 +314,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
