@@ -47,7 +47,7 @@ st.markdown(f"""
         display: flex;
         justify-content: center;
         padding: 30px 0;
-        width: 300px !important;
+
     }}
     
     .scroll-button {{
@@ -71,7 +71,7 @@ st.markdown(f"""
     
     <div class="button-container">
         <a href="#search-here" target="_self" class="scroll-button">
-            Start
+            Search
         </a>
     </div>
 """, unsafe_allow_html=True)
@@ -118,6 +118,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
