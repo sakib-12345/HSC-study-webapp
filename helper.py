@@ -33,7 +33,7 @@ def check_auth():
 sakibhossaintahmid@gmail.com
     """, unsafe_allow_html=True)
 
-    with st.expander("About this app")
+    with st.expander("About this app"):
         st.write("*This web app helps you study without getting distracted by unnecessary YouTube videos. You can easily access free one-shot classes and their PDFs in one place.*")
     
     # 4. Stop execution of the rest of the page if not authenticated
@@ -266,6 +266,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
