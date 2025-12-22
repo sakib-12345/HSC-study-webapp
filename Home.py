@@ -57,7 +57,7 @@ st.markdown(f"""
         max-width: 400px;     /* Prevents it from getting too huge on desktop */
         
         padding: 12px 0px !important;
-       
+        text-align: center;
         border-radius: 8px;
         font-weight: 500;
         transition: opacity 0.3s ease;
@@ -122,6 +122,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
