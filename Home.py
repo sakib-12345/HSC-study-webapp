@@ -1,6 +1,9 @@
 import streamlit as st
 from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
+st.markdown('# <div style="text-align: center; color: grey;">v1.0.0</div>',unsafe_allow_html=True
+
+           ) 
 
 
 Page()
@@ -92,6 +95,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
