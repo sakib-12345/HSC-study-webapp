@@ -161,7 +161,7 @@ def ani_head():
   color: rgb(124, 124, 124);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   box-sizing: content-box;
   height: 40px;
   padding: 10px 10px;
@@ -279,6 +279,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
