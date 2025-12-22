@@ -5,7 +5,7 @@ from streamlit.components.v1 import html
 
 st.html('<div id="top"></div>') 
 
-html("<script>window.parent.window.scrollTo(0,0);</script>", height=0)
+
 Page()
 
 
@@ -132,6 +132,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
