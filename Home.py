@@ -1,9 +1,9 @@
 import streamlit as st
 from data import subjects
-from helper import ani_head, side_note, social_links, check_auth, Page, side
+from helper import ani_head, side_note, social_links, check_auth, Page
 
 Page()
-side()
+
 check_auth()
 
 hide_st_style = """
@@ -77,6 +77,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
