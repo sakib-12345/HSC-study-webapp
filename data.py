@@ -113,8 +113,8 @@ subjects = {
         "2nd Paper": chem2
     },
     "Biology": {
-        "1st Paper": botany,
-        "2nd Paper": zoology
+        "Botany": botany,
+        "Zoology": zoology
     },
     "Bangla": {
         "1st Paper": {"Not available yet": ["https://www.youtube.com/watch?v=dQw4w9WgXcQ",
@@ -130,5 +130,6 @@ subjects = {
     }
 
 }
+
 
 
