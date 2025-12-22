@@ -8,7 +8,7 @@ Page()
 
 if st.button("SEARCH"):
     # Your logic here
-    st.switch_page("pages/SEARCH.py")
+    st.switch_page("pages/1_SEARCH.py")
 
 
 
@@ -62,6 +62,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
