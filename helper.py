@@ -29,7 +29,9 @@ def check_auth():
             </style>
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
-    st.title("📈 HSC Study WebApp")
+    PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png?raw=true"
+
+    st.title(f"![icon]({PNG_URL}) HSC Study WebApp")
     st.caption("Private Access Required!!!")
     user_code = st.text_input("Enter Invite Code", type="password")
     if st.button("Access App"):
@@ -38,7 +40,7 @@ def check_auth():
             st.rerun()
         else:
             st.error("Invalid invite code.")
-    st.markdown("For code contact me on ✉:")
+    st.markdown("For code contact me :")
     st.markdown("""```bash
 sakibhossaintahmid@gmail.com
     """, unsafe_allow_html=True)
@@ -277,6 +279,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
