@@ -11,19 +11,19 @@ with st.sidebar:
     
     # Facebook
     st.page_link("www.facebook.com", 
-                 label="Facebook", icon=":material/facebook:")
+                 label="Facebook")
     
     # Instagram
     st.page_link("www.instagram.com", 
-                 label="Instagram", icon=":material/camera:")
+                 label="Instagram")
     
     # X (Twitter)
     st.page_link("x.com", 
-                 label="X (Twitter)", icon=":material/close:")
+                 label="X (Twitter)")
     
     # GitHub
     st.page_link("github.com", 
-                 label="GitHub", icon=":material/terminal:")
+                 label="GitHub")
     
     # Email
     st.page_link("mailto:sakibhossaintahmid@gmail.com", 
@@ -102,6 +102,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
