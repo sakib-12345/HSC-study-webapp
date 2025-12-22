@@ -71,9 +71,9 @@ zoology = {
 
 chem1 = {
     "Chapter-1":["https://youtu.be/3ILNd6iFso8?si=Gtv3p9cLmQ0OFdgS", ""],
-    "Chapter-2.1":["https://youtu.be/OPBVZWEHtGE?si=Oa6ZK-KKZzw2rZ40", "https://drive.google.com/file/d/1IOwhKFSp1pfRj8USrgm9PZcBrFLmAxm8/view?usp=sharing"],
-    "Chapter-2.2":["https://youtu.be/RcssceVe3Ig?si=3ENxXMp8lEgPXxBu", "https://drive.google.com/file/d/1VAcsvFzT-7I_ZpnP0oqn3GbcrteDsLBE/view?usp=sharing"],
-    "Chapter-3.1":["https://youtu.be/V0elC5WDrsg?si=x0B4OKzaMBlNrId6", "https://drive.google.com/file/d/1s_uu_0yZmoHxgbrFGdNynxgvdnyeaC2v/view?usp=sharing"],
+    "Chapter-2.1":["https://youtu.be/OPBVZWEHtGE?si=Oa6ZK-KKZzw2rZ40", "https://drive.google.com/file/d/1IOwhKFSp1pfRj8USrgm9PZcBrFLmAxm8/preview"],
+    "Chapter-2.2":["https://youtu.be/RcssceVe3Ig?si=3ENxXMp8lEgPXxBu", "https://drive.google.com/file/d/1VAcsvFzT-7I_ZpnP0oqn3GbcrteDsLBE/preview"],
+    "Chapter-3.1":["https://youtu.be/V0elC5WDrsg?si=x0B4OKzaMBlNrId6", "https://drive.google.com/file/d/1s_uu_0yZmoHxgbrFGdNynxgvdnyeaC2v/preview"],
     "Chapter-3.2":["https://youtu.be/SoqlGi6dFZY?si=ZDRiFdsnHJcDgkAz", ""],
     "Chapter-4.1":["https://youtu.be/xNMDGbeuxmk?si=6TeMWF0oyEihEL_c", ""],
     "Chapter-4.2":["https://youtu.be/CHJYjLUc9Sc?si=g-W2qRM7SkXuWmf9", ""],
@@ -81,15 +81,15 @@ chem1 = {
 }
 
 chem2 = {
-    "Chapter-1.1":["https://youtu.be/158RXVE-MJo?si=Sb7pSrsFT1SRJrT0", "https://drive.google.com/file/d/1_wjDtehBNp2CVtN3zM1U6k7zqVBqICP-/view?usp=sharing"],
-    "Chapter-1.2":["https://youtu.be/8LKZ_hk1tfs?si=EHDMXMfDPb_Y7lUl", "https://drive.google.com/file/d/1e2QgMw7DLkJUL35RG-ZGtPegI3enWtJ9/view?usp=sharing"],
-    "Chapter-2.1":["https://youtu.be/gNDfRTTU034?si=CPIuiUa_VcNKFxUU", "https://drive.google.com/file/d/1281iGsyEZLeyDBRFyj_ADujgFNt3lpZC/view?usp=sharing"],
-    "Chapter-2.2":["https://youtu.be/uU5-5P24hYM?si=9GD6QANFhOKAihrL", "https://drive.google.com/file/d/1_SWAtYHMQXHV556k1_tuerwTO8ioAK5z/view?usp=sharing"],
-    "Chapter-2.3":["https://youtu.be/DtH9GHvQaCY?si=vNOBCKS51Cvigo38", "https://drive.google.com/file/d/1_SWAtYHMQXHV556k1_tuerwTO8ioAK5z/view?usp=sharing"],
-    "Chapter-3.1":["https://youtu.be/DkbNP8MQy9Y?si=MkDY6AD9J7bdZfX9", "https://drive.google.com/file/d/1OUhoM1ypzaiMZcjLBMHJWMs8lCA9M9Sz/view?usp=sharing"],
-    "Chapter-3.2":["https://youtu.be/TmlcU07I58k?si=aHc8LYFYjFeye-Du", "https://drive.google.com/file/d/10SPjh0fa_Dix9BBOunKSymu6D_TLWtYB/view?usp=sharing"],
-    "Chapter-4.1":["https://youtu.be/go3FSMCM2Ac?si=dMEQBNh9vxk2stRS", "https://drive.google.com/file/d/1FHbnpVkDfCKsZksfKMbM8F6u4nygB97b/view?usp=sharing"],
-    "Chapter-4.2":["https://youtu.be/SfVX7zAoxPg?si=QfNEuNUB7YScwuJQ", "https://drive.google.com/file/d/1iVqE9vB65vMb3me4d-EZgaXKj5ICEYLp/view?usp=sharing"],
+    "Chapter-1.1":["https://youtu.be/158RXVE-MJo?si=Sb7pSrsFT1SRJrT0", "https://drive.google.com/file/d/1_wjDtehBNp2CVtN3zM1U6k7zqVBqICP-/preview"],
+    "Chapter-1.2":["https://youtu.be/8LKZ_hk1tfs?si=EHDMXMfDPb_Y7lUl", "https://drive.google.com/file/d/1e2QgMw7DLkJUL35RG-ZGtPegI3enWtJ9/preview"],
+    "Chapter-2.1":["https://youtu.be/gNDfRTTU034?si=CPIuiUa_VcNKFxUU", "https://drive.google.com/file/d/1281iGsyEZLeyDBRFyj_ADujgFNt3lpZC/preview"],
+    "Chapter-2.2":["https://youtu.be/uU5-5P24hYM?si=9GD6QANFhOKAihrL", "https://drive.google.com/file/d/1_SWAtYHMQXHV556k1_tuerwTO8ioAK5z/preview"],
+    "Chapter-2.3":["https://youtu.be/DtH9GHvQaCY?si=vNOBCKS51Cvigo38", "https://drive.google.com/file/d/1_SWAtYHMQXHV556k1_tuerwTO8ioAK5z/preview"],
+    "Chapter-3.1":["https://youtu.be/DkbNP8MQy9Y?si=MkDY6AD9J7bdZfX9", "https://drive.google.com/file/d/1OUhoM1ypzaiMZcjLBMHJWMs8lCA9M9Sz/preview"],
+    "Chapter-3.2":["https://youtu.be/TmlcU07I58k?si=aHc8LYFYjFeye-Du", "https://drive.google.com/file/d/10SPjh0fa_Dix9BBOunKSymu6D_TLWtYB/preview"],
+    "Chapter-4.1":["https://youtu.be/go3FSMCM2Ac?si=dMEQBNh9vxk2stRS", "https://drive.google.com/file/d/1FHbnpVkDfCKsZksfKMbM8F6u4nygB97b/preview"],
+    "Chapter-4.2":["https://youtu.be/SfVX7zAoxPg?si=QfNEuNUB7YScwuJQ", "https://drive.google.com/file/d/1iVqE9vB65vMb3me4d-EZgaXKj5ICEYLp/preview"],
 }
 
 
@@ -130,6 +130,7 @@ subjects = {
     }
 
 }
+
 
 
 
