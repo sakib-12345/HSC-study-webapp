@@ -1,9 +1,7 @@
 import streamlit as st
 from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
-st.markdown('# <div style="text-align: center; color: grey;">v1.0.0</div>',unsafe_allow_html=True
 
-           ) 
 
 
 Page()
@@ -40,13 +38,7 @@ with st.container(border=True):
         st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY PAGE")
     with a4:
         st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
-st.write("")
-st.write("")
-b1, b2 =  st.columns(2)
-with b1:
-    st.markdown(side_note_2(), unsafe_allow_html=True)
-with b2:
-    st.markdown(side_note(), unsafe_allow_html=True)
+
 
 
 
@@ -87,6 +79,13 @@ else:
     with st.container(height=500):
         st.markdown('<div style="text-align: center; color: grey;">No search result</div>',unsafe_allow_html=True)
 
+st.write("")
+st.write("")
+b1, b2 =  st.columns(2)
+with b1:
+    st.markdown(side_note_2(), unsafe_allow_html=True)
+with b2:
+    st.markdown(side_note(), unsafe_allow_html=True)
 
 st.markdown(social_links(), unsafe_allow_html=True)
 
@@ -95,6 +94,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
