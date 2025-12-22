@@ -6,9 +6,6 @@ from helper import ani_head, side_note, social_links, check_auth, Page, side_not
 
 Page()
 
-if st.button("SEARCH", type="primary", use_container_width=True):
-    st.switch_page("pages/1_SEARCH.py")
-
 
 
 check_auth()
@@ -25,6 +22,11 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.markdown(ani_head(), unsafe_allow_html=True)
+
+e1, e2, e3 = st.columns([1, 2, 1])
+with e3:
+    if st.button("SEARCH", type="primary", use_container_width=True):
+        st.switch_page("pages/1_SEARCH.py")
 
 
 PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
@@ -61,6 +63,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
