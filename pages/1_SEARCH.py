@@ -4,6 +4,22 @@ from helper import ani_head, side_note, social_links, check_auth, Page, side_not
 
 
 
+Page()
+
+
+
+check_auth()
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+           
+            """
+    
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
+
 st.header("Search here", divider="violet")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
