@@ -1,14 +1,8 @@
 import streamlit as st
 from data import subjects
-from helper import ani_head, side_note, social_links, check_auth
+from helper import ani_head, side_note, social_links, check_auth, Page
 
-st.logo("webapp_icon.png", size="large")
-
-st.set_page_config(
-    page_title="Hsc Study",
-    page_icon="webapp_icon.png",
-    layout="wide"
-)
+Page()
 
 check_auth()
 
@@ -81,6 +75,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
