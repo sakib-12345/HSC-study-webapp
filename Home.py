@@ -36,7 +36,37 @@ with st.expander("Quick View"):
         st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY PAGE")
     with a4:
         st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
-    
+
+import streamlit as st
+
+# Custom CSS to center the button and apply your hex color
+st.markdown(f"""
+    <style>
+    /* Centers the button container */
+    .stLinkButton {{
+        display: flex;
+        justify-content: center;
+    }}
+    /* Styles the button itself */
+    .stLinkButton > a {{
+        background-color: #c084fc !important;
+        color: white !important;
+        border: none !important;
+        padding: 0.5rem 2rem !important;
+        border-radius: 8px !important;
+        transition: opacity 0.3s ease;
+    }}
+    /* Subtle hover effect */
+    .stLinkButton > a:hover {{
+        opacity: 0.85 !important;
+    }}
+    </style>
+""", unsafe_allow_html=True)
+
+# The Start Button
+st.link_button("Start", "https://hsc-study-webapp-by-sakib.streamlit.app/~/+/#search-here")
+
+
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
@@ -79,6 +109,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
