@@ -2,7 +2,7 @@ import streamlit as st
 from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
 from streamlit.components.v1 import html
-
+st.header("")
 html("<script>window.parent.window.scrollTo(0,0);</script>", height=0)
 st.html('<div id="top"></div>') 
 
@@ -135,6 +135,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
