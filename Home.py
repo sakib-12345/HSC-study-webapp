@@ -1,7 +1,7 @@
 import streamlit as st
 from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
-from streamlit.components.v1 import html
+
 
 Page()
 
@@ -52,7 +52,7 @@ st.write("")
 st.write("")
 st.write("")
 
-st.header("Search here", divider="rainbow")
+st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
 
@@ -92,6 +92,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
