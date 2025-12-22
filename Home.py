@@ -22,7 +22,10 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.markdown(ani_head(), unsafe_allow_html=True)
-
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 e1, e2, e3 = st.columns([1, 2, 1])
 with e2:
     if st.button("SEARCH", type="primary", use_container_width=True):
@@ -31,7 +34,9 @@ with e2:
 
 PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
-
+st.write("")
+st.write("")
+st.write("")
 st.caption("Quick view")
 with st.container(border=True):
     a1, a2, a3, a4 = st.columns(4)
@@ -63,6 +68,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
