@@ -22,7 +22,7 @@ st.markdown(ani_head(), unsafe_allow_html=True)
 
 st.write("> study material will be updated soon...")
 
-PNG_URL = "click.png"
+PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
 with st.expander("Quick View"):
     a1, a2, a3, a4 = st.columns(4)
@@ -77,6 +77,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
