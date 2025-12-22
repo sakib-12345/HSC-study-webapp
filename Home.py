@@ -65,6 +65,7 @@ st.markdown(f"""
     .scroll-button:hover {{
         opacity: 0.85;
         color: white !important;
+        text-decoration: none !important; 
     }}
     </style>
     
@@ -117,6 +118,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
