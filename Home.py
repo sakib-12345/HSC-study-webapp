@@ -80,6 +80,9 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
+
+
+st.markdown(side_note(), unsafe_allow_html=True)
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
@@ -113,8 +116,6 @@ else:
         st.markdown('<div style="text-align: center; color: grey;">No search result</div>',unsafe_allow_html=True)
 
 
-
-st.markdown(side_note(), unsafe_allow_html=True)
 st.markdown(social_links(), unsafe_allow_html=True)
 
 st.markdown(
@@ -122,6 +123,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
