@@ -29,13 +29,13 @@ st.markdown(ani_head(), unsafe_allow_html=True)
 st.write("> study material will be updated soon...")
 
 with st.expander("Quick View"):
-    with st.container(border=True)
+    with st.container(border=True):
         st.page_link("pages/MATH.py", label="MATH PAGE")
-    with st.container(border=True)
+    with st.container(border=True):
         st.page_link("pages/BIOLOGY.py", label="BIOLOGY")
-    with st.container(border=True)
+    with st.container(border=True):
         st.page_link("pages/CHEMISTRY.py", label="CHEMISTRY PAGE")
-    with st.container(border=True)
+    with st.container(border=True):
         st.page_link("pages/ICT.py", label="ICT PAGE")
     
 st.subheader("Search here", divider="rainbow")
@@ -80,6 +80,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
