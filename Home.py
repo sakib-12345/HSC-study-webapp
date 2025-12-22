@@ -51,7 +51,7 @@ st.write("")
 st.write("")
 st.write("")
 st.write("")
-st.html('<div id="search-here"></div>')
+
 st.header("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
@@ -92,6 +92,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
