@@ -1,12 +1,8 @@
 import streamlit as st
 from data import chem1, chem2
-from helper import pdf_view, check_auth
+from helper import pdf_view, check_auth, Page
 
-st.set_page_config(
-    page_title="Hsc Study",
-    page_icon="📈",
-    layout="wide"
-)
+Page()
 
 check_auth()
 hide_st_style = """
