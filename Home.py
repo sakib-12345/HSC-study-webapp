@@ -22,7 +22,6 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 st.markdown(ani_head(), unsafe_allow_html=True)
 
-st.write("> study material will be updated soon...")
 
 PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
@@ -36,7 +35,7 @@ st.markdown(f"""
     .button-container {{
         display: flex;
         justify-content: center;
-        padding: 30px 0;
+        padding: 35px 0;
 
     }}
     
@@ -124,6 +123,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
