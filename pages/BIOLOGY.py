@@ -1,14 +1,8 @@
 import streamlit as st
-from helper import check_auth
+from helper import check_auth, Page
 from data import botany, zoology
 
-
-st.set_page_config(
-    page_title="Hsc Study",
-    page_icon="📈",
-    layout="wide"
-)
-
+Page()
 check_auth()
 hide_st_style = """
             <style>
