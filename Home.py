@@ -24,7 +24,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 st.markdown(ani_head(), unsafe_allow_html=True)
 
 e1, e2, e3 = st.columns([1, 2, 1])
-with e3:
+with e2:
     if st.button("SEARCH", type="primary", use_container_width=True):
         st.switch_page("pages/1_SEARCH.py")
 
@@ -63,6 +63,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
