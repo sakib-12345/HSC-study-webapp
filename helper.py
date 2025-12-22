@@ -12,7 +12,7 @@ def side():
     }
     .social-item {
         text-decoration: none;
-        color: #FAFAFA;
+        color: #c084fc;
         opacity: 0.8;
     }
     .social-item:hover {
@@ -330,6 +330,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
