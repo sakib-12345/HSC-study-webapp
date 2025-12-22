@@ -128,9 +128,9 @@ def side_note():
         <div class="about-title-dark">About this app</div>
 
         <div class="about-box-dark">
-        The videos and PDFs in this app are sourced from YouTube and Google Drive.<br><br>
-All content is free and publicly available on the original creators’ platforms.<br><br>
-All video views are counted on the original creators’ YouTube channels, not on this app.
+           The videos and PDFs in this app are sourced from YouTube and Google Drive.<br><br>
+           All content is free and publicly available on the original creators’ platforms.<br><br>
+           All video views are counted on the original creators’ YouTube channels, not on this app.
         </div>
 
         """
@@ -267,6 +267,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
