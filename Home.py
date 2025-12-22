@@ -47,6 +47,7 @@ st.markdown(f"""
         display: flex;
         justify-content: center;
         padding: 30px 0;
+        width: 300px !important;
     }}
     
     .scroll-button {{
@@ -117,6 +118,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
