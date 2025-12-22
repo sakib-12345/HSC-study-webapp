@@ -35,7 +35,7 @@ st.markdown(f"""
     .button-container {{
         display: flex;
         justify-content: center;
-        padding: 35px 0;
+        padding: 40px 0;
 
     }}
     
@@ -81,8 +81,14 @@ with st.container(border=True):
         st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
 
 
-
+st.write("")
+st.write("")
 st.markdown(side_note(), unsafe_allow_html=True)
+
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 st.subheader("Search here", divider="rainbow")
 st.markdown('<div style="color: grey;">Only Math, Biology, Chemistry and ICT for now. Others coming soon....</div>',unsafe_allow_html=True)
 sub = st.selectbox("📘 Select subject", subjects.keys())
@@ -123,6 +129,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
