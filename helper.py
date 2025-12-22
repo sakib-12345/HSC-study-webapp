@@ -142,7 +142,7 @@ def side_note_2():
         <div class="about-box-dark">
            This web app helps you study without getting distracted by unnecessary YouTube videos.<br><br>
            You can easily access free one-shot classes and their PDFs in one place.<br><br>
-           You can [search](#search-here) or find the dedicated pages for each subject in the sidebr.
+           You can search or find the dedicated pages for each subject in the sidebr.
         </div>
 
         """
@@ -313,6 +313,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
