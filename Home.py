@@ -2,8 +2,6 @@ import streamlit as st
 from data import subjects
 from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
 from streamlit.components.v1 import html
-st.text_input("top_focus", label_visibility="collapsed", key="top_focus_trick")
-
 
 Page()
 
@@ -15,10 +13,7 @@ hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
-            /* Prevents browser from jumping to widgets on load */
-            * { overflow-anchor: none !important; }
-            html { scroll-behavior: smooth; }
-            </style>
+           
             """
     
 st.markdown(hide_st_style, unsafe_allow_html=True)
@@ -30,42 +25,6 @@ st.markdown(ani_head(), unsafe_allow_html=True)
 
 PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
-
-st.markdown("""
-    <style>
-    html { 
-        scroll-behavior: smooth; 
-    }
-    
-  
-    * { 
-        overflow-anchor: none !important; 
-    }
-
-    .button-container { 
-        display: flex; 
-        justify-content: center; 
-        padding: 40px 0; 
-    }
-    
-    .scroll-button {
-        background-color: #c084fc !important;
-        color: white !important;
-        width: 80%; 
-        max-width: 550px;
-        padding: 8px 0px !important;
-        text-align: center;
-        border-radius: 8px;
-        font-weight: 500;
-        text-decoration: none !important; 
-        display: inline-block;
-    }
-    </style>
-    
-    <div class="button-container">
-        <a href="#search-here" target="_self" class="scroll-button">Search</a>
-    </div>
-""", unsafe_allow_html=True)
 
 st.caption("Quick view")
 with st.container(border=True):
@@ -133,6 +92,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
