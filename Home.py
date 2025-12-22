@@ -6,6 +6,10 @@ from helper import ani_head, side_note, social_links, check_auth, Page, side_not
 
 Page()
 
+if st.button("SEARCH"):
+    # Your logic here
+    st.switch_page("pages/SEARCH.py")
+
 
 
 check_auth()
@@ -58,6 +62,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
