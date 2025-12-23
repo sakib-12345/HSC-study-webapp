@@ -32,7 +32,7 @@ with e2:
         st.switch_page("pages/1_SEARCH.py")
 
 
-PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
+URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
 
 st.write("")
@@ -40,13 +40,13 @@ st.caption("Quick view")
 with st.container(border=True):
     a1, a2, a3, a4 = st.columns(4)
     with a1:
-        st.page_link("pages/MATH.py", label=f"![icon]({PNG_URL}) MATH")
+        st.page_link("pages/MATH.py", label=f"![icon]({URL}) MATH")
     with a2:
-        st.page_link("pages/BIOLOGY.py", label=f"![icon]({PNG_URL}) BIOLOGY")
+        st.page_link("pages/BIOLOGY.py", label=f"![icon]({URL}) BIOLOGY")
     with a3:
-        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY")
+        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({URL}) CHEMISTRY")
     with a4:
-        st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT")
+        st.page_link("pages/ICT.py", label=f"![icon]({URL}) ICT")
 
 st.write("")
 
@@ -62,11 +62,8 @@ with b2:
 
 st.markdown(social_links(), unsafe_allow_html=True)
 
-st.markdown(
-            '<div style="text-align: center; color: grey;">v1.0.0</div>',
-            unsafe_allow_html=True
+st.markdown(f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',unsafe_allow_html=True) 
 
-           ) 
 
 
 
