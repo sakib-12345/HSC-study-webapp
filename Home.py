@@ -89,19 +89,20 @@ st.write("")
 st.write("#### Any Suggestion for videos?")
 with st.form("message_form"):
     name = st.text_input("Your Name")
-    message = st.text_area("Your Message", height=60)
+    message = st.text_area("Your Suggestion", height=60)
     submit = st.form_submit_button("Send")
 
 if submit:
     if name and message:
+        
         c.execute(
             "INSERT INTO messages (timestamp, name, message) VALUES (?, ?, ?)",
             (datetime.now().isoformat(timespec="seconds"), name, message)
         )
         conn.commit()
-        st.sidebar.success("✅ Message sent!")
+        st.success("✅ Message sent!")
     else:
-        st.sidebar.error("Please fill in all fields.")
+        st.error("Please fill in all fields.")
 
 # ---------- ADMIN VIEW ----------
 if is_admin:
@@ -132,6 +133,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
