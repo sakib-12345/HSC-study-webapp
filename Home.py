@@ -64,7 +64,7 @@ with b2:
     st.markdown(side_note(), unsafe_allow_html=True)
 
 
-ADMIN_KEY = st.secrets.get("ADMIN_KEY", "changeme")
+
 
 # ---------- DATABASE ----------
 conn = sqlite3.connect("messages.db", check_same_thread=False)
@@ -82,7 +82,7 @@ conn.commit()
 
 # ---------- URL PARAMS ----------
 params = st.query_params
-is_admin = params.get("admin", [""])[0] == ADMIN_KEY
+is_admin = params.get("admin", [""])[0] == st.secrets["ADMIN_KEY"]
 st.write("")
 st.write("")
 st.write("")
@@ -133,6 +133,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
