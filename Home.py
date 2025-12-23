@@ -86,7 +86,7 @@ is_admin = params.get("admin", [""])[0] == ADMIN_KEY
 st.write("#### Any Suggestion for videos?")
 with st.form("message_form"):
     name = st.text_input("Your Name")
-    message = st.text_area("Your Message")
+    message = st.text_area("Your Message", height=60)
     submit = st.form_submit_button("Send")
 
 if submit:
@@ -129,6 +129,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
