@@ -82,7 +82,9 @@ conn.commit()
 # ---------- URL PARAMS ----------
 params = st.experimental_get_query_params()
 is_admin = params.get("admin", [""])[0] == ADMIN_KEY
-
+st.write("")
+st.write("")
+st.write("")
 st.write("#### Any Suggestion for videos?")
 with st.form("message_form"):
     name = st.text_input("Your Name")
@@ -129,6 +131,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
