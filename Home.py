@@ -40,13 +40,13 @@ st.caption("Quick view")
 with st.container(border=True):
     a1, a2, a3, a4 = st.columns(4)
     with a1:
-        st.page_link("pages/MATH.py", label=f"![icon]({PNG_URL}) MATH PAGE")
+        st.page_link("pages/MATH.py", label=f"![icon]({PNG_URL}) MATH")
     with a2:
         st.page_link("pages/BIOLOGY.py", label=f"![icon]({PNG_URL}) BIOLOGY")
     with a3:
-        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY PAGE")
+        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({PNG_URL}) CHEMISTRY")
     with a4:
-        st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT PAGE")
+        st.page_link("pages/ICT.py", label=f"![icon]({PNG_URL}) ICT")
 
 st.write("")
 
@@ -67,6 +67,7 @@ st.markdown(
             unsafe_allow_html=True
 
            ) 
+
 
 
 
