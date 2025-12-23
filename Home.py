@@ -81,7 +81,7 @@ CREATE TABLE IF NOT EXISTS messages (
 conn.commit()
 
 # ---------- URL PARAMS ----------
-params = st.experimental_get_query_params()
+params = st.query_params()
 is_admin = params.get("admin", [""])[0] == ADMIN_KEY
 st.write("")
 st.write("")
@@ -133,6 +133,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
