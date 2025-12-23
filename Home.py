@@ -62,7 +62,6 @@ with b2:
     st.write("")
     st.markdown(side_note(), unsafe_allow_html=True)
 
-# Admin secret (set this in Streamlit Secrets)
 ADMIN_KEY = st.secrets.get("ADMIN_KEY", "changeme")
 
 # ---------- DATABASE ----------
@@ -108,24 +107,24 @@ if is_admin:
     st.subheader("📬 Admin Messages")
 
     rows = c.execute(
-        "SELECT timestamp, name, message FROM messages ORDER BY id DESC"
+        "SELECT id, timestamp, name, message FROM messages ORDER BY id DESC"
     ).fetchall()
 
     if not rows:
         st.info("No messages yet.")
     else:
-        for ts, name, msg in rows:
+        for msg_id, ts, name, msg in rows:
             st.markdown(f"**{name}**  \n🕒 {ts}")
             st.write(msg)
+
+            col1, col2 = st.columns([1, 5])
+            with col1:
+                if st.button("🗑️ Delete", key=f"del_{msg_id}"):
+                    c.execute("DELETE FROM messages WHERE id = ?", (msg_id,))
+                    conn.commit()
+                    st.experimental_rerun()
+
             st.divider()
-
-
-
-
-st.markdown(social_links(), unsafe_allow_html=True)
-
-st.markdown(f'<div style="text-align: center; color: grey;">&copy; 2025 Sakib Hossain Tahmid. All Rights Reserved.</div>',unsafe_allow_html=True) 
-
 
 
 
