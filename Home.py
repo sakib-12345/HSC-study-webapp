@@ -50,15 +50,16 @@ with st.container(border=True):
     with a4:
         st.page_link("pages/ICT.py", label=f"![icon]({URL}) ICT")
 
-st.write("")
 
 st.write("")
 st.write("")
 b1, b2 =  st.columns(2)
 with b1:
     st.write("")
+    st.write("")
     st.markdown(side_note_2(), unsafe_allow_html=True)
 with b2:
+    st.write("")
     st.write("")
     st.markdown(side_note(), unsafe_allow_html=True)
 
@@ -131,6 +132,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Your Name. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
