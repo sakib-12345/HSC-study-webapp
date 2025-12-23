@@ -62,7 +62,7 @@ with b2:
     st.write("")
     st.markdown(side_note(), unsafe_allow_html=True)
 
-social_links()
+
 ADMIN_KEY = st.secrets.get("ADMIN_KEY", "changeme")
 
 # ---------- DATABASE ----------
@@ -83,8 +83,8 @@ conn.commit()
 params = st.experimental_get_query_params()
 is_admin = params.get("admin", [""])[0] == ADMIN_KEY
 
-st.sidebar.write("#### Any Suggestion for videos?")
-with st.sidebar.form("message_form"):
+st.write("#### Any Suggestion for videos?")
+with st.form("message_form"):
     name = st.text_input("Your Name")
     message = st.text_area("Your Message")
     submit = st.form_submit_button("Send")
@@ -125,6 +125,15 @@ if is_admin:
 
             st.divider()
 
+st.markdown(social_links(), unsafe_allow_html=True)
+
+year = datetime.now().year
+st.markdown(
+    f"""
+    ---
+    © {year} Sakib Hossain Tahmid. All rights reserved.
+    """
+)
 
 
 
