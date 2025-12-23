@@ -122,9 +122,10 @@ if is_admin:
                 if st.button("🗑️ Delete", key=f"del_{msg_id}"):
                     c.execute("DELETE FROM messages WHERE id = ?", (msg_id,))
                     conn.commit()
-                    st.experimental_rerun()
+                    st.rerun()
 
             st.divider()
+
 
 
 
