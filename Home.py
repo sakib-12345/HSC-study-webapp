@@ -62,6 +62,7 @@ with b2:
     st.write("")
     st.markdown(side_note(), unsafe_allow_html=True)
 
+social_links()
 ADMIN_KEY = st.secrets.get("ADMIN_KEY", "changeme")
 
 # ---------- DATABASE ----------
@@ -82,10 +83,8 @@ conn.commit()
 params = st.experimental_get_query_params()
 is_admin = params.get("admin", [""])[0] == ADMIN_KEY
 
-# ---------- USER VIEW ----------
-st.title("💬 Send me a message")
-
-with st.form("message_form"):
+st.write("#### Any Suggestion for videos?")
+with st.sidebar.form("message_form"):
     name = st.text_input("Your Name")
     message = st.text_area("Your Message")
     submit = st.form_submit_button("Send")
@@ -97,9 +96,9 @@ if submit:
             (datetime.now().isoformat(timespec="seconds"), name, message)
         )
         conn.commit()
-        st.success("✅ Message sent!")
+        st.sidebar.success("✅ Message sent!")
     else:
-        st.error("Please fill in all fields.")
+        st.sidebar.error("Please fill in all fields.")
 
 # ---------- ADMIN VIEW ----------
 if is_admin:
@@ -126,7 +125,8 @@ if is_admin:
 
             st.divider()
 
-social_links()
+
+
 
 
 
