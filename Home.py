@@ -83,7 +83,7 @@ conn.commit()
 params = st.experimental_get_query_params()
 is_admin = params.get("admin", [""])[0] == ADMIN_KEY
 
-st.write("#### Any Suggestion for videos?")
+st.sidebar.write("#### Any Suggestion for videos?")
 with st.sidebar.form("message_form"):
     name = st.text_input("Your Name")
     message = st.text_area("Your Message")
@@ -124,6 +124,7 @@ if is_admin:
                     st.rerun()
 
             st.divider()
+
 
 
 
