@@ -126,6 +126,8 @@ if is_admin:
 
             st.divider()
 
+social_links()
+
 
 
 
