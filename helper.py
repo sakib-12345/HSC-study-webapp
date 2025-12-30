@@ -11,6 +11,48 @@ def Page():
     )
 
 def check_auth():
+    # 1. Skip if login is disabled
+    if not st.secrets.get("LOGIN_ENABLED", False):
+        return True
+
+    # 2. Already authenticated
+    if st.session_state.get("authenticated", False):
+        return True
+
+    # 3. Popup dialog
+    @st.dialog("🔒 Private Access Required")
+    def login_popup():
+        PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png?raw=true"
+
+        st.markdown(f"<div style="text-align:center"><img src="{PNG_URL}" width="120"><h3>HSC Study WebApp</h3><p><b>Invite-only access</b></p></div>",unsafe_allow_html=True)
+
+        user_code = st.text_input("Enter Invite Code", type="password")
+
+        if st.button("Access App", use_container_width=True):
+            if user_code == st.secrets.get("INVITE_CODE"):
+                st.session_state["authenticated"] = True
+                st.success("Access granted ✅")
+                st.rerun()
+            else:
+                st.error("Invalid invite code")
+
+        st.markdown("---")
+        st.caption("For code contact:")
+        st.code("sakibhossaintahmid@gmail.com")
+
+        with st.expander("About this app"):
+            st.write(
+                "This web app helps you study without getting distracted by unnecessary YouTube videos. "
+                "You can easily access free one-shot classes and their PDFs in one place."
+            )
+
+    # 4. Open popup automatically & stop app
+    login_popup()
+    st.stop()
+
+
+
+def check_auth_1():
     # 1. Skip if login is disabled in secrets.toml
     if not st.secrets.get("LOGIN_ENABLED", False):
         return True
@@ -314,6 +356,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
