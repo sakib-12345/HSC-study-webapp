@@ -117,23 +117,25 @@ if is_admin:
     if not rows:
         st.info("No messages yet.")
     else:
-        for msg_id, ts, name, msg in rows:
-            st.markdown(f"**{name}**  \n🕒 {ts}")
-            st.write(msg)
+        st.container(height=300)
+            for msg_id, ts, name, msg in rows:
+                st.markdown(f"**{name}**  \n🕒 {ts}")
+                st.write(msg)
 
-            col1, col2 = st.columns([1, 5])
-            with col1:
-                if st.button("🗑️ Delete", key=f"del_{msg_id}"):
-                    c.execute("DELETE FROM messages WHERE id = ?", (msg_id,))
-                    conn.commit()
-                    st.rerun()
+                col1, col2 = st.columns([1, 5])
+                with col1:
+                    if st.button("🗑️ Delete", key=f"del_{msg_id}"):
+                        c.execute("DELETE FROM messages WHERE id = ?", (msg_id,))
+                        conn.commit()
+                        st.rerun()
 
-            st.divider()
+                st.divider()
 
 st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
