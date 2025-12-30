@@ -25,7 +25,7 @@ st.markdown("**Author:** Sakib Hossain Tahmid")
 st.markdown(
     """
 <p align="center">
-  <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="App Screenshot" width="200">
+  <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png?raw=true" alt="App Screenshot" width="200">
 </p>
 """,
     unsafe_allow_html=True
