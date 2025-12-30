@@ -10,7 +10,7 @@ Page()
 
 
 
-check_auth()
+
 
 hide_st_style = """
             <style>
@@ -133,6 +133,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
+check_auth()
 
 
 
