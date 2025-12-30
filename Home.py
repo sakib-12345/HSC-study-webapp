@@ -117,7 +117,7 @@ if is_admin:
     if not rows:
         st.info("No messages yet.")
     else:
-        st.container(height=300):
+        with st.container(height=300):
             for msg_id, ts, name, msg in rows:
                 st.markdown(f"**{name}**  \n🕒 {ts}")
                 st.write(msg)
@@ -135,6 +135,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
