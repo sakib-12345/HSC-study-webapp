@@ -113,7 +113,8 @@ if is_admin:
     rows = c.execute(
         "SELECT id, timestamp, name, message FROM messages ORDER BY id DESC"
     ).fetchall()
-
+    if st.button("🔄 Refresh Messages"):
+        st.rerun()
     if not rows:
         st.info("No messages yet.")
     else:
@@ -135,6 +136,7 @@ st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
+
 
 
 
