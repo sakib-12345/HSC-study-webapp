@@ -1,18 +1,5 @@
 import streamlit as st
-from helper import check_auth, Page
 from data import botany, zoology
-
-Page()
-check_auth()
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            
-            </style>
-            """
-    
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.header("Biology Review")
