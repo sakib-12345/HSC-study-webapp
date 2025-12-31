@@ -1,19 +1,6 @@
 import streamlit as st
 from data import math1, math2
-from helper import pdf_view, check_auth, Page
-
-Page()
-check_auth()
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            
-            </style>
-            """
-    
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
+from helper import pdf_view
 
 st.header("Math Review")
 
@@ -51,6 +38,7 @@ with t2:
                 st.markdown(f"[⛶ Full veiw]({ur2[1]})", unsafe_allow_html=True)
 
                 st.markdown(pdf_view(ur2[1]), unsafe_allow_html=True)
+
 
 
 
