@@ -43,13 +43,39 @@ def check_auth():
         else:
             st.error("Invalid invite code.")
     st.markdown("For code contact me :")
-    st.markdown("""```bash
-sakibhossaintahmid@gmail.com
-    """, unsafe_allow_html=True)
+    st.markdown("sakibhossaintahmid@gmail.com", unsafe_allow_html=True)
 
     with st.expander("About this app"):
         st.write("*This web app helps you study without getting distracted by unnecessary YouTube videos. You can easily access free one-shot classes and their PDFs in one place.*")
-    
+    st.markdown("""
+<style>
+.footer a {
+    color: gray;           /* gray color */
+    text-decoration: none; /* remove underline */
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #555; /* darker gray on hover */
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2; /* light gray background */
+}
+</style>
+
+<div class="footer">
+    <a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a>
+    <a href="https://x.com/_sakib_00000001" target="_blank">X</a>
+    <a href="https://github.com/sakib-12345" target="_blank">GitHub</a>
+    <a href="mailto:sakibhossaintahmid@gmail.com">Email</a>
+</div>
+""", unsafe_allow_html=True)
+
     # 4. Stop execution of the rest of the page if not authenticated
     st.stop()
 
@@ -316,6 +342,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
