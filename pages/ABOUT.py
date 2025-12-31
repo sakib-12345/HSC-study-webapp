@@ -1,18 +1,11 @@
 import streamlit as st
 
-# Hide default Streamlit header/footer
-hide_st_style = """
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
-    </style>
-"""
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 # ==========================
 # Page Header
 # ==========================
-st.markdown("# 📚 HSC Study WebApp")
+
+st.markdown("# <span style=\"color:#c084fc;\">About HSC Study WebApp</span>", unsafe_allow_html=True)
+
 st.markdown("**Author:** Sakib Hossain Tahmid")
 
 st.markdown(
@@ -49,12 +42,8 @@ Preparing for HSC exams can be overwhelming due to scattered online resources. T
 - Enable learning from **any device with internet access**
 """)
 
-# ==========================
-# Features
-# ==========================
-st.markdown("## 📚 Features")
 
-st.markdown("### 👨‍🎓 Student Features")
+st.markdown("## 👨‍🎓 Student Features")
 st.markdown("""
 - **Access Free Lessons:** Watch one-shot HSC video lessons for multiple subjects  
 - **Download PDFs:** Access study materials, worksheets, and guides alongside video lessons  
@@ -63,7 +52,7 @@ st.markdown("""
 - **Invite Code Access (Optional):** Secure private access if needed
 """)
 
-st.markdown("### 🛠️ Technical Features")
+st.markdown("## 🛠️ Technical Features")
 st.markdown("""
 - **Built with Python & Streamlit:** Lightweight, fast, and responsive  
 - **Content Aggregation:** Videos and PDFs are linked directly from YouTube and Google Drive  
