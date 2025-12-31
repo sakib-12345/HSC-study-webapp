@@ -68,13 +68,14 @@ year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
 
 
+import streamlit as st
 
-st.sidebar.markdown("""
+st.markdown("""
 <style>
 .footer a {
     color: gray;           /* gray text */
     text-decoration: none; /* remove underline */
-    margin: 0 10px;
+    margin-left: 10px;
     font-weight: bold;
     transition: color 0.3s;
 }
@@ -84,18 +85,27 @@ st.sidebar.markdown("""
 }
 
 .footer {
-    text-align: center;
+    text-align: left;      /* left-aligned */
     padding: 20px;
     background-color: transparent; /* transparent background */
+    line-height: 2.5;
+}
+
+.footer .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: purple;
+    border-radius: 50%;   /* makes it circular */
+    margin-right: 10px;
 }
 </style>
 
 <div class="footer">
-    <a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a>
-    <a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a>
-    <a href="https://x.com/_sakib_00000001" target="_blank">X</a>
-    <a href="https://github.com/sakib-12345" target="_blank">GitHub</a>
-    <a href="mailto:sakibhossaintahmid@gmail.com">Email</a>
+    <div><span class="icon"></span><a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a></div>
+    <div><span class="icon"></span><a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a></div>
+    <div><span class="icon"></span><a href="https://x.com/_sakib_00000001" target="_blank">X</a></div>
+    <div><span class="icon"></span><a href="https://github.com/sakib-12345" target="_blank">GitHub</a></div>
+    <div><span class="icon"></span><a href="mailto:sakibhossaintahmid@gmail.com">Email</a></div>
 </div>
 """, unsafe_allow_html=True)
-
