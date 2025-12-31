@@ -68,3 +68,34 @@ year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
 
 
+
+st.sidebar.markdown("""
+<style>
+.footer a {
+    color: gray;           /* gray text */
+    text-decoration: none; /* remove underline */
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #555; /* darker gray on hover */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent; /* transparent background */
+}
+</style>
+
+<div class="footer">
+    <a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a>
+    <a href="https://x.com/_sakib_00000001" target="_blank">X</a>
+    <a href="https://github.com/sakib-12345" target="_blank">GitHub</a>
+    <a href="mailto:sakibhossaintahmid@gmail.com">Email</a>
+</div>
+""", unsafe_allow_html=True)
+
