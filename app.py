@@ -24,7 +24,7 @@ home = st.Page(
      default=True
 )
 search = st.Page(
-    page="pages/1_SEARCH.py",
+    page="pages/SEARCH.py",
     title="SEARCH"
 )
 about = st.Page(
