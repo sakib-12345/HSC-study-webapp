@@ -50,7 +50,7 @@ def check_auth():
     st.markdown("""
 <style>
 .footer {
-    text-align: left;              /* left-aligned */
+    text-align: center;              /* left-aligned */
     padding: 10px 5px;             /* smaller padding */
     background-color: transparent; /* transparent background */
     font-size: 12px;               /* smaller font */
@@ -350,6 +350,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
