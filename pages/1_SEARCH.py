@@ -1,23 +1,8 @@
 import streamlit as st
 from data import subjects
-from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
 
 
 
-Page()
-
-
-
-check_auth()
-
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-           
-            """
-    
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 st.header("Search here", divider="violet")
@@ -52,13 +37,4 @@ else:
     with st.container(height=500):
         st.markdown('<div style="text-align: center; color: grey;">No search result</div>',unsafe_allow_html=True)
 
-
-
-st.markdown(social_links(), unsafe_allow_html=True)
-
-st.markdown(
-            '<div style="text-align: center; color: grey;">v1.0.0</div>',
-            unsafe_allow_html=True
-
-           ) 
 
