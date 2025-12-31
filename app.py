@@ -99,4 +99,5 @@ st.sidebar.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("""<p style="text-align:center; font-size:12px; color: #c084fc;">by Sakib Hossain Tahmid</p>""", unsafe_allow_html=True)
+st.sidebar.markdown("<p style=\"text-align:center; font-size:14px; color:#c084fc;\">by Sakib Hossain Tahmid</p>", unsafe_allow_html=True)
+
