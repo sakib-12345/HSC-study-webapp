@@ -63,7 +63,7 @@ def check_auth():
 .footer {
     text-align: center;
     padding: 20px;
-    background-color: #f2f2f2; /* light gray background */
+    background-color: #ffffff; /* light gray background */
 }
 </style>
 
@@ -342,6 +342,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
