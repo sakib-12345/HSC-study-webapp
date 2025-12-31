@@ -71,16 +71,18 @@ st.sidebar.markdown("""
 <style>
 .footer {
     text-align: left;              /* left-aligned */
-    padding: 10px 5px;             /* smaller padding */
+    padding: 10px 5px;             /* small padding */
     background-color: transparent; /* transparent background */
-    font-size: 14px;               /* smaller font */
+    font-size: 14px;               /* small font */
     line-height: 1.5;
+    white-space: nowrap;           /* keep all links in one line */
+    overflow-x: auto;              /* allow horizontal scroll if needed */
 }
 
 .footer a {
     color: gray;           
     text-decoration: none; 
-    margin-right: 15px; 
+    margin-right: 20px; 
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -89,14 +91,10 @@ st.sidebar.markdown("""
     color: #555; 
 }
 
-/* Make footer responsive */
+/* Small screens: shrink text if needed */
 @media (max-width: 600px) {
     .footer {
         font-size: 13px;
-    }
-    .footer a {
-        display: block;
-        margin: 5px 0;
     }
 }
 </style>
