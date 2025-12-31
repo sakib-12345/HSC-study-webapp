@@ -16,7 +16,7 @@ st.write("")
 e1, e2, e3 = st.columns([1, 3, 1])
 with e2:
     if st.button("SEARCH", type="primary", use_container_width=True):
-        st.switch_page("pages/1_SEARCH.py")
+        st.switch_page("SEARCH.py")
 
 
 URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
@@ -27,13 +27,13 @@ st.caption("Quick view")
 with st.container(border=True):
     a1, a2, a3, a4 = st.columns(4)
     with a1:
-        st.page_link("pages/MATH.py", label=f"![icon]({URL}) MATH")
+        st.page_link("MATH.py", label=f"![icon]({URL}) MATH")
     with a2:
-        st.page_link("pages/BIOLOGY.py", label=f"![icon]({URL}) BIOLOGY")
+        st.page_link("BIOLOGY.py", label=f"![icon]({URL}) BIOLOGY")
     with a3:
-        st.page_link("pages/CHEMISTRY.py", label=f"![icon]({URL}) CHEMISTRY")
+        st.page_link("CHEMISTRY.py", label=f"![icon]({URL}) CHEMISTRY")
     with a4:
-        st.page_link("pages/ICT.py", label=f"![icon]({URL}) ICT")
+        st.page_link("ICT.py", label=f"![icon]({URL}) ICT")
 
 
 st.write("")
