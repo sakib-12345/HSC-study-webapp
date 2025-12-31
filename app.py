@@ -54,15 +54,15 @@ chemistry_page = st.Page(
 
 pg = st.navigation(
     {
-        "🔗 Main": [home, search, about],
-        "🔗 Subjects": [ict_page, math_page, biology_page, chemistry_page],
+        "🟣 Main": [home, search, about],
+        "🟣 Subjects": [ict_page, math_page, biology_page, chemistry_page],
     }
 )
 
 pg.run()
 
 
-st.sidebar.markdown(social_links(), unsafe_allow_html=True)
+st.markdown(social_links(), unsafe_allow_html=True)
 
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
