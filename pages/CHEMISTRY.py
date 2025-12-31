@@ -1,19 +1,6 @@
 import streamlit as st
 from data import chem1, chem2
-from helper import pdf_view, check_auth, Page
-
-Page()
-
-check_auth()
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            
-            </style>
-            """
-    
-st.markdown(hide_st_style, unsafe_allow_html=True)
+from helper import pdf_view
 
 
 st.header("Chemistry Review")
