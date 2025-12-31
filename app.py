@@ -19,7 +19,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 home = st.Page(
-    page="HOME.py",
+    page="pages/HOME.py",
     title="HOME",
      default=True
 )
