@@ -73,7 +73,7 @@ st.sidebar.markdown("""
     text-align: left;              /* left-aligned */
     padding: 10px 5px;             /* smaller padding */
     background-color: transparent; /* transparent background */
-    font-size: 14px;               /* smaller font */
+    font-size: 12px;               /* smaller font */
     line-height: 1.5;
 }
 
@@ -99,5 +99,5 @@ st.sidebar.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown("<p style=\"text-align:center; font-size:14px; color:#c084fc;\">by Sakib Hossain Tahmid</p>", unsafe_allow_html=True)
+st.sidebar.markdown("<p style=\"font-size:12px; color:#c084fc;\">Made by Sakib Hossain Tahmid</p>", unsafe_allow_html=True)
 
