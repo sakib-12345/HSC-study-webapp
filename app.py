@@ -67,35 +67,28 @@ st.markdown(social_links(), unsafe_allow_html=True)
 year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
 
-st.sidebar.markdown("""
+import streamlit as st
+
+st.markdown("""
 <style>
 .footer {
     text-align: left;              /* left-aligned */
-    padding: 10px 5px;             /* small padding */
+    padding: 10px 5px;             /* smaller padding */
     background-color: transparent; /* transparent background */
-    font-size: 14px;               /* small font */
+    font-size: 14px;               /* smaller font */
     line-height: 1.5;
-    white-space: nowrap;           /* keep all links in one line */
-    overflow-x: auto;              /* allow horizontal scroll if needed */
 }
 
 .footer a {
     color: gray;           
     text-decoration: none; 
-    margin-right: 20px; 
+    margin-right: 15px; 
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .footer a:hover {
     color: #555; 
-}
-
-/* Small screens: shrink text if needed */
-@media (max-width: 600px) {
-    .footer {
-        font-size: 13px;
-    }
 }
 </style>
 
