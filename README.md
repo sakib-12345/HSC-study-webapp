@@ -1,7 +1,7 @@
 
 # 📚 HSC Study WebApp
 **Author:** Sakib Hossain Tahmid  
-*Try the App:* [Click Here](https://hsc-study-webapp-by-sakib.streamlit.app/)
+*Try the App:* [Click Here](https://hsc-study-webapp.streamlit.app/)
 
 <p align="center">
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="App Screenshot" width="200">
