@@ -68,41 +68,48 @@ year = datetime.now().year
 st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
 
 st.sidebar.markdown("""
+<!-- Load Font Awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <style>
+.footer {
+    text-align: left;      
+    padding: 20px;
+    background-color: transparent; /* transparent background */
+    line-height: 2.5;
+}
+
 .footer a {
     color: gray;           /* gray text */
     text-decoration: none; /* remove underline */
     margin-left: 10px;
     font-weight: bold;
     transition: color 0.3s;
+    vertical-align: middle;
 }
 
 .footer a:hover {
     color: #555; /* darker gray on hover */
 }
 
-.footer {
-    text-align: left;      /* left-aligned */
-    padding: 20px;
-    background-color: transparent; /* transparent background */
-    line-height: 2.5;
-}
-
 .footer .icon {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: purple;
-    border-radius: 50%;   /* makes it circular */
+    color: white;
+    border-radius: 50%;   
+    text-align: center;
+    line-height: 30px;
     margin-right: 10px;
 }
 </style>
 
 <div class="footer">
-    <div><span class="icon"></span><a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a></div>
-    <div><span class="icon"></span><a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a></div>
-    <div><span class="icon"></span><a href="https://x.com/_sakib_00000001" target="_blank">X</a></div>
-    <div><span class="icon"></span><a href="https://github.com/sakib-12345" target="_blank">GitHub</a></div>
-    <div><span class="icon"></span><a href="mailto:sakibhossaintahmid@gmail.com">Email</a></div>
+    <div><span class="icon"><i class="fab fa-facebook-f"></i></span><a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a></div>
+    <div><span class="icon"><i class="fab fa-instagram"></i></span><a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a></div>
+    <div><span class="icon"><i class="fab fa-x-twitter"></i></span><a href="https://x.com/_sakib_00000001" target="_blank">X</a></div>
+    <div><span class="icon"><i class="fab fa-github"></i></span><a href="https://github.com/sakib-12345" target="_blank">GitHub</a></div>
+    <div><span class="icon"><i class="fas fa-envelope"></i></span><a href="mailto:sakibhossaintahmid@gmail.com">Email</a></div>
 </div>
 """, unsafe_allow_html=True)
