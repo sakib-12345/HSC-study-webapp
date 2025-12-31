@@ -54,7 +54,7 @@ chemistry_page = st.Page(
 
 pg = st.navigation(
     {
-        "Main": [home, search, about],
+        "![i](https://img.icons8.com/?size=100&id=r_5gXo27isnj&format=png&color=000000) Main": [home, search, about],
         "Subjects": [ict_page, math_page, biology_page, chemistry_page],
     }
 )
