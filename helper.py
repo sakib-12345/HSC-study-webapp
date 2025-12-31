@@ -45,9 +45,45 @@ def check_auth():
     st.markdown("> For access contact me : sakibhossaintahmid@gmail.com")
  
 
-    with st.expander("About this app"):
+    with st.expander("About this app", expanded=True):
         st.write("*This web app helps you study without getting distracted by unnecessary YouTube videos. You can easily access free one-shot classes and their PDFs in one place.*")
-   
+    st.markdown("""
+<style>
+.footer {
+    text-align: left;              /* left-aligned */
+    padding: 10px 5px;             /* smaller padding */
+    background-color: transparent; /* transparent background */
+    font-size: 12px;               /* smaller font */
+    line-height: 1.5;
+}
+
+.footer a {
+    color: gray;           
+    text-decoration: none; 
+    margin-right: 15px; 
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #555; 
+}
+</style>
+
+<div class="footer">
+    <a href="https://www.facebook.com/sakibhossain.tahmid" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/_sakib_000001" target="_blank">Instagram</a>
+    <a href="https://x.com/_sakib_00000001" target="_blank">X</a>
+    <a href="https://github.com/sakib-12345" target="_blank">GitHub</a>
+    <a href="mailto:sakibhossaintahmid@gmail.com">Email</a>
+</div>
+""", unsafe_allow_html=True)
+
+    st.markdown(
+    "<p style=\"text-align:center; font-size:12px; color:#c084fc;\">Made by Sakib Hossain Tahmid</p>",
+    unsafe_allow_html=True
+)
+
     # 4. Stop execution of the rest of the page if not authenticated
     st.stop()
 
@@ -314,6 +350,7 @@ def pdf_view(pdf_url):
     </script>
 
     """
+
 
 
 
