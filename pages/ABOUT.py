@@ -1,11 +1,4 @@
 import streamlit as st
-from helper import check_auth, Page
-
-Page()
-
-
-
-check_auth()
 
 # Hide default Streamlit header/footer
 hide_st_style = """
