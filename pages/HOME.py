@@ -17,7 +17,8 @@ e1, e2, e3 = st.columns([1, 3, 1])
 with e2:
     if st.button("SEARCH", type="primary", use_container_width=True):
         st.switch_page("pages/SEARCH.py")
-
+    if st.button("ABOUT ➜", use_container_width=True):
+        st.switch_page("pages/ABOUT.py")
 
 URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/click.png?raw=true"
 
