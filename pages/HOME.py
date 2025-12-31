@@ -3,25 +3,8 @@ import streamlit as st
 import sqlite3
 from datetime import datetime
 from data import subjects
-from helper import ani_head, side_note, social_links, check_auth, Page, side_note_2
+from helper import ani_head, side_note, side_note_2
 
-
-
-Page()
-
-
-
-check_auth()
-
-
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-           
-            """
-    
-st.markdown(hide_st_style, unsafe_allow_html=True)
 
 
 
@@ -132,13 +115,6 @@ if is_admin:
                         st.rerun()
 
                 st.divider()
-
-st.markdown(social_links(), unsafe_allow_html=True)
-
-year = datetime.now().year
-st.markdown(f"""<p style="text-align:center; font-size:14px; color:gray;">© {year} Sakib Hossain Tahmid. All rights reserved.</p>""", unsafe_allow_html=True)
-
-
 
 
 
