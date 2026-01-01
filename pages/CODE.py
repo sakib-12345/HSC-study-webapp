@@ -47,7 +47,10 @@ st.write("")
 st.write("")
 for file in files:
     code = file.read_text(encoding="utf-8", errors="ignore")
-    with st.expander(f"### 📄 {file.relative_to(ROOT)}", expanded=False):
+    with st.expander(f"📄 {file.relative_to(ROOT)}", expanded=False):
         st.code(code, language="python", line_numbers=True)
 
-    
+with st.expander("🖼️ Used Images", expanded=False):
+    st.image("click.png")
+    st.image("webapp_icon.png")
+
