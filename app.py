@@ -17,7 +17,8 @@ hide_st_style = """
     
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-st.sidebar.subheader("GITHUB")
+with st.sidebar.container(border=True):
+    st.markdown("### This webapp github link.[click here](https://github.com/sakib-12345/HSC-study-webapp)", unsafe_allow_html=True)
 
 home = st.Page(
     page="pages/HOME.py",
