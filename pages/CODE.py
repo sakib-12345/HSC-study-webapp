@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas
+import pandas as pd
 from data import subjects
 from pathlib import Path
 
