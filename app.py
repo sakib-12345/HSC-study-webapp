@@ -62,7 +62,7 @@ code = st.Page(
 )
 pg = st.navigation(
     {
-        "🟣 Main": [home, search, about],
+        "🟣 Main": [home, search, code, about],
         "🟣 Subjects": [math_page, biology_page, chemistry_page, ict_page, physics_page],
     }
 )
