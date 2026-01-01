@@ -1,21 +1,20 @@
 import streamlit as st
 from pathlib import Path
 
-st.title("App Source Code")
+st.title("📂 Project Source Code")
 
-ROOT = Path(__file__).parent
+ROOT = Path(__file__).parent.parent  # adjust if this file is inside /pages
 
-# Collect python files (exclude .streamlit, venv, etc.)
+EXCLUDE = {".streamlit", "venv", "__pycache__", ".git"}
+
 files = sorted([
-    f for f in ROOT.rglob("*.py")
-    if "venv" not in str(f)
-    and ".streamlit" not in str(f)
+    f for f in ROOT.rglob("*")
+    if f.is_file()
+    and not any(ex in f.parts for ex in EXCLUDE)
+    and f.suffix in {".py", ".txt", ".md", ".json", ".yaml", ".yml"}
 ])
 
-file_paths = {str(f.relative_to(ROOT)): f for f in files}
-
-selected = st.selectbox("Select a file", file_paths.keys())
-
-code = file_paths[selected].read_text(encoding="utf-8")
-
-st.code(code, language="python")
+for file in files:
+    st.markdown(f"### 📄 {file.relative_to(ROOT)}")
+    code = file.read_text(encoding="utf-8", errors="ignore")
+    st.code(code, language=file.suffix.lstrip("."), line_numbers=True)
