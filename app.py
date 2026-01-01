@@ -52,10 +52,15 @@ chemistry_page = st.Page(
     title="CHEMISTRY",
 )
 
+physics_page = st.Page(
+    page="pages/PHYSICS.py",
+    title="PHYSICS",
+)
+
 pg = st.navigation(
     {
         "🟣 Main": [home, search, about],
-        "🟣 Subjects": [ict_page, math_page, biology_page, chemistry_page],
+        "🟣 Subjects": [math_page, biology_page, chemistry_page, ict_page, physics_page],
     }
 )
 
