@@ -21,7 +21,7 @@ st.write("")
 for file in files:
     st.markdown(f"### 📄 {file.relative_to(ROOT)}")
     code = file.read_text(encoding="utf-8", errors="ignore")
-    with st.expander(f"📄 {file.relative_to(ROOT)}", expanded=False):
+    with st.expander("CODE (click here)", expanded=False):
         st.code(code, language="python", line_numbers=True)
 
     
