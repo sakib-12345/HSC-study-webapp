@@ -15,7 +15,9 @@ files = sorted([
     and not any(ex in f.parts for ex in EXCLUDE)
     and f.suffix in {".py", ".txt", ".md", ".json", ".yaml", ".yml"}
 ])
-
+st.write("")
+st.write("")
+st.write("")
 for file in files:
     st.markdown(f"### 📄 {file.relative_to(ROOT)}")
     code = file.read_text(encoding="utf-8", errors="ignore")
