@@ -40,22 +40,14 @@ data = []
 for subject, papers in subjects.items():
     for paper_name, chapters in papers.items():
         for chapter_name, links in chapters.items():
-            # Some chapters may have empty links
             youtube_link = links[0] if len(links) > 0 else ""
             drive_link = links[1] if len(links) > 1 else ""
             data.append([subject, paper_name, chapter_name, youtube_link, drive_link])
 
-# Create DataFrame
 df_master = pd.DataFrame(data, columns=["Subject", "Paper", "Chapter", "YouTube Link", "Drive Link"])
 
-# Optionally make links clickable
-df_clickable = df_master.copy()
-df_clickable["YouTube Link"] = df_clickable["YouTube Link"].apply(lambda x: f"[YouTube]({x})" if x else "")
-df_clickable["Drive Link"] = df_clickable["Drive Link"].apply(lambda x: f"[Drive]({x})" if x else "")
-
-
 with st.expander("Video and Pdf Links"):
-    st.markdown(df_clickable.to_html(escape=False, index=False), unsafe_allow_html=True)
+    st.dataframe(df_master)
     
 ROOT = Path(__file__).parent.parent  # adjust if this file is inside /pages
 
