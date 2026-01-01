@@ -1,5 +1,5 @@
-
 import streamlit as st
+import streamlit.components.v1 as components
 import sqlite3
 from datetime import datetime
 from data import subjects
@@ -118,6 +118,150 @@ if is_admin:
                 st.divider()
 
 
+
+
+st.subheader("Bored???lets play")
+st.caption("Click game or press **Space**")
+flappy_main_html = """
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { margin: 0; display: flex; justify-content: center; background: #222; overflow: hidden; border-radius: 15px; }
+        #gameCanvas { background: #70c5ce; border: 5px solid #fff; border-radius: 15px; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        #score { position: absolute; top: 20px; color: white; font-family: 'Arial Black', sans-serif; font-size: 32px; text-shadow: 3px 3px #000; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="score">0</div>
+    <canvas id="gameCanvas"></canvas>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+        const scoreEl = document.getElementById('score');
+
+        // Main Page Dimensions
+        canvas.width = 500; 
+        canvas.height = 500;
+
+        // Physics Constants
+        const GRAVITY = 0.35;
+        const FLAP_STRENGTH = -6.5;
+        const PIPE_SPEED = 2.5;
+        const PIPE_SPAWN_RATE = 100;
+        const GAP_SIZE = 130;
+
+        let bird = { x: 80, y: 200, w: 34, h: 24, dy: 0, rotation: 0 };
+        let pipes = [];
+        let score = 0;
+        let frameCount = 0;
+        let isGameOver = false;
+
+        function reset() {
+            bird = { x: 80, y: 200, w: 34, h: 24, dy: 0, rotation: 0 };
+            pipes = [];
+            score = 0;
+            frameCount = 0;
+            isGameOver = false;
+            scoreEl.innerText = "0";
+        }
+
+        function update() {
+            if (isGameOver) return;
+            
+            // Bird Movement
+            bird.dy += GRAVITY;
+            bird.y += bird.dy;
+            bird.rotation = Math.min(Math.PI/4, Math.max(-Math.PI/4, bird.dy * 0.1));
+
+            // Ground/Ceiling Collision
+            if (bird.y + bird.h > canvas.height || bird.y < 0) isGameOver = true;
+
+            // Pipe Logic
+            if (frameCount % PIPE_SPAWN_RATE === 0) {
+                let h = Math.floor(Math.random() * (canvas.height - GAP_SIZE - 100)) + 50;
+                pipes.push({ x: canvas.width, top: h, passed: false });
+            }
+
+            for (let i = pipes.length - 1; i >= 0; i--) {
+                let p = pipes[i];
+                p.x -= PIPE_SPEED;
+
+                // Pipe Collision
+                if (bird.x + bird.w > p.x && bird.x < p.x + 55) {
+                    if (bird.y < p.top || bird.y + bird.h > p.top + GAP_SIZE) isGameOver = true;
+                }
+
+                // Score Counting
+                if (!p.passed && p.x + 55 < bird.x) {
+                    p.passed = true;
+                    score++;
+                    scoreEl.innerText = score;
+                }
+
+                if (p.x < -60) pipes.splice(i, 1);
+            }
+            frameCount++;
+        }
+
+        function draw() {
+            // Draw Sky
+            ctx.fillStyle = "#70c5ce";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Draw Pipes
+            ctx.fillStyle = "#2e8b57";
+            ctx.strokeStyle = "#1b4d31";
+            ctx.lineWidth = 2;
+            pipes.forEach(p => {
+                ctx.fillRect(p.x, 0, 55, p.top);
+                ctx.strokeRect(p.x, 0, 55, p.top);
+                ctx.fillRect(p.x, p.top + GAP_SIZE, 55, canvas.height);
+                ctx.strokeRect(p.x, p.top + GAP_SIZE, 55, canvas.height);
+            });
+
+            // Draw Bird
+            ctx.save();
+            ctx.translate(bird.x + bird.w/2, bird.y + bird.h/2);
+            ctx.rotate(bird.rotation);
+            ctx.font = "30px Arial";
+            ctx.fillText("🐦", -18, 12);
+            ctx.restore();
+
+            if (isGameOver) {
+                ctx.fillStyle = "rgba(0,0,0,0.7)";
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = "white";
+                ctx.textAlign = "center";
+                ctx.font = "bold 30px sans-serif";
+                ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
+                ctx.font = "18px sans-serif";
+                ctx.fillText("Click to Play Again", canvas.width/2, canvas.height/2 + 40);
+            }
+        }
+
+        function gameLoop() {
+            update(); draw(); requestAnimationFrame(gameLoop);
+        }
+
+        const handleInput = (e) => {
+            if (e.code === 'Space' || e.type === 'mousedown') {
+                if (isGameOver) reset();
+                else bird.dy = FLAP_STRENGTH;
+            }
+        };
+
+        window.addEventListener('keydown', handleInput);
+        canvas.addEventListener('mousedown', handleInput);
+        gameLoop();
+    </script>
+</body>
+</html>
+"""
+
+# Render component in main page
+components.html(flappy_main_html, height=550)
 
 
 
