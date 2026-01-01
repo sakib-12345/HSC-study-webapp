@@ -40,7 +40,7 @@ files = sorted([
     f for f in ROOT.rglob("*")
     if f.is_file()
     and not any(ex in f.parts for ex in EXCLUDE)
-    and f.suffix in {".py", ".txt", ".md", ".json", ".yaml", ".yml","toml"}
+    and f.suffix in {".py", ".txt", ".md", ".json", ".yaml", ".yml",".toml"}
 ])
 st.write("")
 st.write("")
