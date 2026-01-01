@@ -44,6 +44,7 @@ files = sorted([
 ])
 st.write("")
 st.write("")
+st.write("### Code")
 st.write("")
 for file in files:
     code = file.read_text(encoding="utf-8", errors="ignore")
@@ -59,3 +60,7 @@ with st.expander("⚙ .streamlit/config.toml", expanded=False):
     base="dark"
     primaryColor="#c084fc"              
     """, language="python", line_numbers=True)
+st.write("")
+st.write("")
+st.write("### Or, Clone and Run")
+st.code("git clone https://github.com/sakib-12345/HSC-study-webapp.git")
