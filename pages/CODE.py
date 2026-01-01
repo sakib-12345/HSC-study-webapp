@@ -51,6 +51,11 @@ for file in files:
         st.code(code, language="python", line_numbers=True)
 
 with st.expander("🖼️ Used Images", expanded=False):
-    st.image("click.png")
-    st.image("webapp_icon.png")
-
+    st.image("click.png", caption="click.png")
+    st.image("webapp_icon.png", caption="webapp_icon.png")
+with st.expander("⚙ .streamlit/config.toml", expanded=False):
+    st.code("""
+    [theme]
+    base="dark"
+    primaryColor="#c084fc"              
+    """, language="python", line_numbers=True)
