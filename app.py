@@ -56,7 +56,10 @@ physics_page = st.Page(
     page="pages/PHYSICS.py",
     title="PHYSICS",
 )
-
+code = st.Page(
+    page="pages/CODE.py",
+    title="CODE",
+)
 pg = st.navigation(
     {
         "🟣 Main": [home, search, about],
