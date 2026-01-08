@@ -3,8 +3,7 @@ import pandas as pd
 from data import subjects
 from pathlib import Path
 
-st.title("Project Source Code")
-
+st.markdown("# <span style=\"color:#c084fc;\">Project Source Code</span>", unsafe_allow_html=True)
 st.markdown("OPEN IN GITHUB [CLICK HERE](https://github.com/sakib-12345/HSC-study-webapp)", unsafe_allow_html=True)
 st.write("")
 st.write("")
