@@ -139,39 +139,36 @@ flappy_main_html = """
         }
 
         #gameWrapper {
-            position: relative;
-            width: 100%;
-            max-width: 500px;
-        }
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    display: inline-block;
+    }
 
-        #gameCanvas {
-            width: 100%;
-            height: auto;
-            background: #70c5ce;
-            border: 5px solid #fff;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            transform-origin: center;
-        }
+    #gameCanvas {
+    width: 100%;
+    height: auto;
+    background: #70c5ce;
+    border: 5px solid #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform-origin: center;
+    display: block;   /* important */
+}
 
-        /* 👇 Only on mobile: zoom out a bit */
-        @media (max-width: 768px) {
-            #gameCanvas {
-                transform: scale(0.9);
-            }
-        }
+ #score {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 28px;
+    text-shadow: 3px 3px #000;
+    pointer-events: none;
+    z-index: 10;      /* critical fix */
+}
 
-        #score {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            font-family: 'Arial Black', sans-serif;
-            font-size: 28px;
-            text-shadow: 3px 3px #000;
-            pointer-events: none;
-        }
     </style>
 </head>
 <body>
