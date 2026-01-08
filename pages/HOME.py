@@ -272,7 +272,7 @@ function draw() {
     ctx.translate(bird.x + bird.w/2, bird.y + bird.h/2);
     ctx.rotate(bird.rotation);
     ctx.font = "30px Arial";
-    ctx.fillText("👽", -18, 12);
+    ctx.fillText("💀", -18, 12);
     ctx.restore();
 
     if (isGameOver) {
@@ -281,7 +281,7 @@ function draw() {
         ctx.fillStyle = "white";
         ctx.textAlign = "center";
         ctx.font = "bold 28px sans-serif";
-        ctx.fillText("GAME OVER", canvas.width/2, canvas.height/2);
+        ctx.fillText("🤡 GAME OVER", canvas.width/2, canvas.height/2);
         ctx.font = "16px sans-serif";
         ctx.fillText("Tap to Play Again", canvas.width/2, canvas.height/2 + 40);
     }
