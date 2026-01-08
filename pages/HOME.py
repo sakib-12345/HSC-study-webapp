@@ -310,7 +310,7 @@ gameLoop();
 </html>
 """
 
-components.html(flappy_main_html, height=550)
+components.html(flappy_main_html, height=600)
 
 
 
