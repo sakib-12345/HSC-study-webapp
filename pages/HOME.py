@@ -260,7 +260,7 @@ flappy_main_html = """
             ctx.translate(bird.x + bird.w/2, bird.y + bird.h/2);
             ctx.rotate(bird.rotation);
             ctx.font = "30px Arial";
-            ctx.fillText("🐦", -18, 12);
+            ctx.fillText("🙂", -18, 12);
             ctx.restore();
 
             if (isGameOver) {
