@@ -38,11 +38,11 @@ Access free **one-shot classes** and their PDFs in one place, organized by subje
 
 #### 1.Clone
 ```bash
-https://github.com/sakib-12345/chat-app-with-google-sheet.git
+https://github.com/sakib-12345/HSC-study-webapp.git
 ```
 #### 2.Open folder
 ```bash
-cd chat-app-with-google-sheet
+cd HSC-study-webapp
 ```
 #### 3.Install Libraries
 ```bash
@@ -50,7 +50,7 @@ pip install -r requirements.txt
 ```
 #### 4.Run it (Locally)
 ```bash
-streamlit run chat.py
+streamlit run app.py
 ```
 ## License
 - This project is licensed under the MIT License. You can use, copy, and modify it freely as long as you include the original license.
