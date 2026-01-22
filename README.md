@@ -9,7 +9,7 @@
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="HSC Study WebApp Logo" width="200">
 </p>
 
----
+
 
 ## Overview
 
@@ -19,7 +19,7 @@ The core objective of this project is to eliminate distractions, reduce fragment
 
 The platform is developed using Python and Streamlit, ensuring simplicity, performance, and ease of deployment.
 
----
+
 
 ## Objectives
 
@@ -28,7 +28,7 @@ The platform is developed using Python and Streamlit, ensuring simplicity, perfo
 * Minimize distractions commonly associated with large content platforms
 * Maintain ethical usage of third-party educational content
 
----
+
 
 ## Features
 
@@ -49,7 +49,7 @@ The platform is developed using Python and Streamlit, ensuring simplicity, perfo
 * Video views contribute to the original creator’s channel
 * The application is non-commercial and educational
 
----
+
 
 ## User Interface
 
@@ -58,7 +58,6 @@ The platform is developed using Python and Streamlit, ensuring simplicity, perfo
 * Optimized for focus-oriented learning
 * Suitable for desktop and low-resource devices
 
----
 
 ## Technology Stack
 
@@ -75,15 +74,28 @@ The platform is developed using Python and Streamlit, ensuring simplicity, perfo
 
 ```
 HSC-study-webapp/
-│
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Project dependencies
-├── assets/                # Images and static files
-├── subjects/              # Subject-wise content modules
-└── README.md              # Project documentation
+├── .streamlit/
+│   └── config.toml
+├── License
+├── README.md
+├── app.py
+├── click.png
+├── data.py
+├── helper.py
+├── pages/
+│   ├── ABOUT.py
+│   ├── BIOLOGY.py
+│   ├── CHEMISTRY.py
+│   ├── CODE.py
+│   ├── HOME.py
+│   ├── ICT.py
+│   ├── MATH.py
+│   ├── PHYSICS.py
+│   └── SEARCH.py
+├── requirements.txt
+└── webapp_icon.png
 ```
 
----
 
 ## Installation & Local Setup
 
@@ -113,7 +125,7 @@ streamlit run app.py
 
 The application will open automatically in your default web browser.
 
----
+
 
 ## Deployment
 
@@ -122,7 +134,7 @@ The application is deployed using Streamlit Community Cloud, providing free host
 Live URL:
 [https://hsc-study-webapp.streamlit.app/](https://hsc-study-webapp.streamlit.app/)
 
----
+
 
 ## Future Enhancements
 
@@ -132,7 +144,7 @@ Live URL:
 * Dark mode support
 * Privacy-friendly usage analytics
 
----
+
 
 ## Contributions
 
@@ -141,20 +153,20 @@ Contributions are welcome.
 You may contribute by improving UI/UX, refactoring code, adding subjects, or reporting issues.
 Please submit a pull request or open an issue for discussion.
 
----
+
 
 ## License
 
 This project is licensed under the MIT License.
 You are free to use, modify, and distribute the software, provided the original license is included.
 
----
+
 
 ## Acknowledgements
 
 This project acknowledges and respects all educators and content creators whose publicly available resources are referenced within the application.
 
----
+
 
 ## Author
 
