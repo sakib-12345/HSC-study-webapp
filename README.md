@@ -3,7 +3,9 @@
 # 📚 HSC Study WebApp
 
 **Author:** Sakib Hossain Tahmid
-**Live Application:** [https://hsc-study-webapp.streamlit.app/](https://hsc-study-webapp.streamlit.app/)
+
+
+**Live Application:** [Click here](https://hsc-study-webapp.streamlit.app/)
 
 <p align="center">
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="HSC Study WebApp Logo" width="200">
