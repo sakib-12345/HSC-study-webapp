@@ -7,7 +7,7 @@
 
 **Live Application:** [Click here](https://hsc-study-webapp.streamlit.app/)
 
-**Content Source:** [here](https://github.com/sakib-12345/HSC-study-webapp/edit/main/README.md#hsc-biology-resources)
+**Content Source:** [here](https://github.com/sakib-12345/HSC-study-webapp/edit/main/README.md#resources))
 
 <p align="center">
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="HSC Study WebApp Logo" width="200">
@@ -178,7 +178,7 @@ This project acknowledges and respects all educators and content creators whose 
 HSC Student | Python & Web Application Developer
 
 
-## HSC Biology Resources
+## Resources
 
 > All content provided here is **open-source and free**, and available on the **creators' YouTube channels**.
 
