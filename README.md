@@ -7,7 +7,7 @@
 
 **Live Application:** [Click here](https://hsc-study-webapp.streamlit.app/)
 
-**Content Source:** [here](https://github.com/sakib-12345/HSC-study-webapp/blob/main/README.md#resources)
+**Content Source:** [here](#resources)
 
 <p align="center">
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="HSC Study WebApp Logo" width="200">
