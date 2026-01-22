@@ -7,7 +7,7 @@
 
 **Live Application:** [Click here](https://hsc-study-webapp.streamlit.app/)
 
-**Content Source:** [here](https://github.com/sakib-12345/HSC-study-webapp/main/README.md#resources)
+**Content Source:** [here](https://github.com/sakib-12345/HSC-study-webapp/blob/main/README.md#resources)
 
 <p align="center">
   <img src="https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png" alt="HSC Study WebApp Logo" width="200">
@@ -183,15 +183,6 @@ HSC Student | Python & Web Application Developer
 > All content provided here is **open-source and free**, and available on the **creators' YouTube channels**.
 
 
-
-**Here:**
-- [ICT](https://github.com/sakib-12345/HSC-study-webapp/new/main#-ict)
-- [Math 1st paper](https://github.com/sakib-12345/HSC-study-webapp/new/main#-mathematics--1st-paper)
-- [Math 2nd paper](https://github.com/sakib-12345/HSC-study-webapp/new/main#-mathematics--2nd-paper)
-- [Chemistry 1st paper](https://github.com/sakib-12345/HSC-study-webapp/new/main#-chemistry--1st-paper)
-- [Chemistry 2nd paper](https://github.com/sakib-12345/HSC-study-webapp/new/main#-chemistry---2nd-paper)
-- [Botany](https://github.com/sakib-12345/HSC-study-webapp/new/main#-biology--botany)
-- [Zoology](https://github.com/sakib-12345/HSC-study-webapp/new/main#-biology--zoology)
 
 
 
