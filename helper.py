@@ -7,7 +7,8 @@ def Page():
     st.set_page_config(
     page_title="Hsc Study",
     page_icon="webapp_icon.png",
-    layout="wide"
+    layout="wide",
+    initial_sidebar_state="collapsed"
     )
 
 
@@ -34,7 +35,7 @@ def check_auth():
     PNG_URL = "https://github.com/sakib-12345/HSC-study-webapp/blob/main/webapp_icon.png?raw=true"
 
     st.title(f"![icon]({PNG_URL}) HSC Study WebApp")
-    st.caption("Private Access Required!!!")
+    st.caption("Updating the web. Please visit after 24 hours.")
     user_code = st.text_input("Enter Invite Code", type="password")
     if st.button("Access App"):
         if user_code == st.secrets.get("INVITE_CODE"):
