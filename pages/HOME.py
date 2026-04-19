@@ -117,10 +117,10 @@ if is_admin:
 
                 st.divider()
 
-with st.sidebar("Bored???lets play"):
-    st.caption("Tap game or press **Space**")
+st.sunheader("Bored???lets play")
+st.caption("Tap game or press **Space**")
 
-    flappy_main_html = """
+flappy_main_html = """
 <!DOCTYPE html>
 <html>
 <head>
@@ -309,7 +309,7 @@ gameLoop();
 </html>
 """
 
-    components.html(flappy_main_html, height=550)
+components.html(flappy_main_html, height=550)
 
 
 
