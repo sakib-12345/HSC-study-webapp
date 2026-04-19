@@ -117,7 +117,7 @@ if is_admin:
 
                 st.divider()
 
-st.sunheader("Bored???lets play")
+st.subheader("Bored???lets play")
 st.caption("Tap game or press **Space**")
 
 flappy_main_html = """
