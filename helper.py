@@ -38,15 +38,15 @@ def check_auth():
     st.caption("Updating the web. Please visit after 24 hours.")
     user_name = st.text_input("Enter Your Name")
     user_code = st.text_input("Enter Invite Code", type="password")
-    if user_name and user_code:
-        if st.button("Access App"):
+    if st.button("Access App"):
+        if user_name and user_code:
             if user_code == st.secrets.get("INVITE_CODE"):
                 st.session_state["authenticated"] = True
                 st.rerun()
             else:
                 st.error("Invalid invite code.")
-    else:
-        st.error("Please Type Your Name and code")
+        else:
+            st.error("Please Type Your Name and code")
     st.markdown("> For access contact me : sakibhossaintahmid@gmail.com")
  
 
