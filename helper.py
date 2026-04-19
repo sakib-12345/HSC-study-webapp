@@ -36,13 +36,17 @@ def check_auth():
 
     st.title(f"![icon]({PNG_URL}) HSC Study WebApp")
     st.caption("Updating the web. Please visit after 24 hours.")
+    user_name = st.text_input("Enter Your Name")
     user_code = st.text_input("Enter Invite Code", type="password")
-    if st.button("Access App"):
-        if user_code == st.secrets.get("INVITE_CODE"):
-            st.session_state["authenticated"] = True
-            st.rerun()
-        else:
-            st.error("Invalid invite code.")
+    if user_name and user_code:
+        if st.button("Access App"):
+            if user_code == st.secrets.get("INVITE_CODE"):
+                st.session_state["authenticated"] = True
+                st.rerun()
+            else:
+                st.error("Invalid invite code.")
+    else:
+        st.error("Please Type Your Name and code")
     st.markdown("> For access contact me : sakibhossaintahmid@gmail.com")
  
 
